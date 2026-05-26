@@ -148,13 +148,36 @@ git commit -m "Remove footprint submodule"
 [@infused-kim](https://github.com/infused-kim) wrote a [guide on how to convert KiCad footprints to ergogen](https://www.notion.so/nilnil/Convert-Kicad-Footprint-to-Ergogen-8340ce87ad554c69af4e3f92bc9a0898?pvs=4), which
 has been extensively used to create original ergogen footprints in this repository.
 
-## Licenses and recognition
+## Licenses
 
 All original footprints and those copied from [@MrZealot](https://github.com/mrzealot), [@TildeWill](https://github.com/tildewill), and [@virginia2244](https://github.com/virginia2244) are licensed under [MIT License][mit]. I also extensively used and modified footprints created by [@infused-kim](https://github.com/infused-kim), which are licensed under [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License][cc-by-nc-sa].
 
 [![CC BY-NC-SA 4.0][cc-by-nc-sa-image]][cc-by-nc-sa]
 
-Furthermore, all of the work I've done wouldn't have been possible without the inspiration or direct reference to the work done by:
+### What does the CC BY-NC-SA 4.0 license mean for your projects?
+
+Because some footprints carry the **Creative Commons Attribution-NonCommercial-ShareAlike 4.0 (CC BY-NC-SA 4.0)** license, there are often questions about what you can and cannot do. 
+
+> [!WARNING]
+> I am not a lawyer, and this does not constitute formal legal advice. Below is my informed understanding on how this license practically applies to your keyboard projects.
+
+#### 1. You CAN manufacture and sell the physical PCBs
+
+Creative Commons licenses govern copyright, which protects *digital files and creative expression*, not functional physical hardware. Once you export Gerbers and send them to a fab (like JLCPCB or PCBWay), the resulting physical circuit board is a functional object and is no longer restricted by the CC copyright. You are legally free to commission these boards and sell the manufactured PCBs on your store.
+
+* *Exception:* If a footprint contains separable artistic elements (like decorative silkscreen art), that art remains copyrighted even on the physical board. However, none of the footprints in this repository contain qualifying silkscreen art.
+
+#### 2. You CANNOT sell or close-source the digital files
+
+Your KiCad `.kicad_pcb` files, the generated Gerbers, and the Ergogen config files that use these footprints *are* subject to the copyright license. You cannot sell these digital files. If you share your modified design files or Gerbers with others, you **must** release them under the exact same CC BY-NC-SA 4.0 license and provide attribution.
+
+#### 3. The Spirit of the License
+
+While the license legally permits the sale of the physical, functional boards, applying a NonCommercial license in the open-source hardware community is often used to signal: *"Please don't manufacture and sell my designs for profit."* While you are legally allowed to sell the physical boards, please keep the community spirit in mind.
+
+## Inspiration and recognition
+
+All of the work I've done wouldn't have been possible without the inspiration or direct reference to the work done by:
 
 - [@foostan](https://github.com/foostan) for the original [Corne keyboard](https://github.com/foostan/crkbd)
 - [@flatfootfox](https://github.com/flatfootfox) for the [Ergogen v4 introductory articles](https://flatfootfox.com/ergogen-introduction/)
