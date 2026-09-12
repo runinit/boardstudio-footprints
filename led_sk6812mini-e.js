@@ -322,11 +322,13 @@ module.exports = {
   )
     `
 
+    // Default orientation follows the mounting variant; explicit rotations still win.
+    const model_rotation = p.led_3dmodel_xyz_rotation || [p.reverse_mount ? -90 : 90, 0, 180];
     const led_3dmodel = `
-    (model ${p.led_3dmodel_filename}
+    (model ${JSON.stringify(p.led_3dmodel_filename)}
       (offset (xyz ${p.led_3dmodel_xyz_offset[0]} ${p.led_3dmodel_xyz_offset[1]} ${p.led_3dmodel_xyz_offset[2]}))
       (scale (xyz ${p.led_3dmodel_xyz_scale[0]} ${p.led_3dmodel_xyz_scale[1]} ${p.led_3dmodel_xyz_scale[2]}))
-      (rotate (xyz ${p.led_3dmodel_xyz_rotation[0]} ${p.led_3dmodel_xyz_rotation[1]} ${p.led_3dmodel_xyz_rotation[2]}))
+      (rotate (xyz ${model_rotation[0]} ${model_rotation[1]} ${model_rotation[2]}))
     )
       `
 

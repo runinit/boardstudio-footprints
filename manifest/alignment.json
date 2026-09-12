@@ -42,6 +42,39 @@
       "terminalCount": 2,
       "geometry": "Both signal pads have a nonzero solid intersection with the socket contact geometry after KiCad STEP export",
       "minimumIntersectionMm3": 1e-05
+    },
+    "ceoloide/led_sk6812mini-e": {
+      "sides": [
+        "F",
+        "B"
+      ],
+      "rotations": [
+        0,
+        90
+      ],
+      "mounting": [
+        "normal",
+        "reverse"
+      ],
+      "geometry": "Each lead projection intersects exactly one copper pad; marked pin 3 matches GND",
+      "maximumSolderGapMm": 0.1
+    },
+    "ceoloide/trrs_pj320a": {
+      "sides": [
+        "F",
+        "B"
+      ],
+      "rotations": [
+        0,
+        90
+      ],
+      "layouts": [
+        "single-sided",
+        "reversible",
+        "reversible symmetric"
+      ],
+      "geometry": "Four leg solids fit four distinct drilled slots and span the board thickness",
+      "signals": "SL, R2, TP and R1 match footprint pad numbers; symmetric layout joins R1 to TP as authored upstream"
     }
   },
   "remaining": [

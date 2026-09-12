@@ -1,17 +1,15 @@
 {
   "total": 39,
   "physical": 26,
-  "bound": 17,
+  "bound": 19,
   "missing": [
     "ceoloide/battery_connector_jst_ph_2",
     "ceoloide/display_ssd1306",
-    "ceoloide/led_sk6812mini-e",
     "ceoloide/mcu_supermini_nrf52840",
     "ceoloide/reset_switch_smd_side",
     "ceoloide/reset_switch_tht_top",
     "ceoloide/rotary_encoder_ec11_ec12",
-    "ceoloide/switch_gateron_ks27_ks33",
-    "ceoloide/trrs_pj320a"
+    "ceoloide/switch_gateron_ks27_ks33"
   ],
   "entries": [
     {
@@ -47,7 +45,7 @@
     {
       "name": "ceoloide/led_sk6812mini-e",
       "kind": "physical",
-      "defaultBound": false,
+      "defaultBound": true,
       "alignment": "unverified"
     },
     {
@@ -119,7 +117,7 @@
     {
       "name": "ceoloide/trrs_pj320a",
       "kind": "physical",
-      "defaultBound": false,
+      "defaultBound": true,
       "alignment": "unverified"
     },
     {

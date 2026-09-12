@@ -16,5 +16,17 @@
     "upstreamUrl": "https://raw.githubusercontent.com/ceoloide/ergogen-footprints/48935f54b456ff1503d78d6b17d9d146b54e8ade/battery_connector_molex_pico_ezmate_1x02.js",
     "upstreamSha256": "301a01a1d9041c417eabe09d1cad7fafb2f390501bba175d904960a1bba11ed6",
     "reason": "Add socket and cable model parameters with side-aware orientation; preserve original copper and nets."
+  },
+  {
+    "path": "led_sk6812mini-e.js",
+    "upstreamUrl": "https://raw.githubusercontent.com/ceoloide/ergogen-footprints/48935f54b456ff1503d78d6b17d9d146b54e8ade/led_sk6812mini-e.js",
+    "upstreamSha256": "eb1e10b29771f5a8c6e6f120a528090eb95cd84d4241df6cc794ddd073ab657d",
+    "reason": "Quote model paths containing spaces and support mounting-aware default rotation while preserving explicit rotation overrides."
+  },
+  {
+    "path": "trrs_pj320a.js",
+    "upstreamUrl": "https://raw.githubusercontent.com/ceoloide/ergogen-footprints/48935f54b456ff1503d78d6b17d9d146b54e8ade/trrs_pj320a.js",
+    "upstreamSha256": "45453176dbaeefd71e2e6dd9003b01b7f1648eed1e8738a032eee8ad2307831c",
+    "reason": "Add model parameters and align defaults with single-sided, reversible and symmetric layouts without changing pads or nets."
   }
 ]

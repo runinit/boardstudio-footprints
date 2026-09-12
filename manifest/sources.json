@@ -1,6 +1,11 @@
 {
   "schema": 1,
   "sources": {
+    "keebio": {
+      "url": "https://github.com/keebio/Keebio-Parts.pretty",
+      "commit": "1486bef23f020c31bf69123c93da199850cc7243",
+      "license": "vendor/keebio/LICENSE"
+    },
     "kiswitch": {
       "url": "https://github.com/kiswitch/kiswitch",
       "commit": "aefcf65038d48d2666ff14530d482be3c350fa6e",
@@ -24,7 +29,7 @@
       "diode_tht_sod123.js": "f57b20d50876d2235682f820d818d5c599bec4f4b7adf559f20631e1018dfa46",
       "display_nice_view.js": "bdb2080a9697fc9ddbc8ec41bd8e2b81bfbcea31f4e220cf39a0094a342a66c7",
       "display_ssd1306.js": "484fa0c1e8cc421e9f7100d1ff765f7646a59b9fe181415edcbf7be7c6db5065",
-      "led_sk6812mini-e.js": "eb1e10b29771f5a8c6e6f120a528090eb95cd84d4241df6cc794ddd073ab657d",
+      "led_sk6812mini-e.js": "406aacad994864b65dbe4b05cff02b1639f189bb8462f40cc579b5d216ea6ba6",
       "mcu_nice_nano.js": "435250311fedf4da930053bfbdc761b1181de0062afb2c85ba80458ea156622a",
       "mcu_supermini_nrf52840.js": "2ec5d1021a640179f5a6e098b8813f56937c2e4d26465d84ad20ec8ff2f50315",
       "mounting_hole_npth.js": "73d1dbff6ac90d29c819749c10942e634d89d66e5c8c8f3801b65a818159085d",
@@ -36,7 +41,7 @@
       "switch_choc_v1_v2.js": "26b32559b9724dc6106190aedcd710e19a304e6bb16036708f41d2d4369c36c9",
       "switch_gateron_ks27_ks33.js": "7292062fd420cd727d52b13fe0c1a8a5279fc046fb4bedbc926d54d0637e9d3e",
       "switch_mx.js": "6921ae4671c77292f5c970e726f15c93bd600f120b72a67167647cad64466156",
-      "trrs_pj320a.js": "45453176dbaeefd71e2e6dd9003b01b7f1648eed1e8738a032eee8ad2307831c",
+      "trrs_pj320a.js": "b0ae0330b8413e0cb38f38f8795c5822b9adb444857176ab2746992f46caaa08",
       "utility_ergogen_logo.js": "eaa818115cc5816c628360cb17a42c68047c0df10062c6c37786e7b988f732cf",
       "utility_filled_zone.js": "64e2669599303be72a40141454e8104a7ff30c5d0d5593ceb189f5002b3aaace",
       "utility_keepout_zone.js": "cb38e5967a54e8951ebfa7922efe21669ac970d4152f5a046c9a079d27a52c58",
@@ -103,7 +108,9 @@
     "vendor/kiswitch/3d_models/SW_Hotswap_Kailh_MX.stp": "31dd9ab0a892e02f43c13f07c3d78f83dbe64390178e64b2f1f6df4849935e5b",
     "vendor/kiswitch/3d_models/SW_Hotswap_Kailh_MX.stp.stl": "cbb0e18dccce3973c928819d885e58adf4b1940ee76f91d3a5d993f2a1597a86",
     "vendor/kiswitch/3d_models/SW_Kailh_Choc_V1.stp": "669d72c083f226e1f9ee9e9dc8424c18e9641984223ba5422a1235d773a6a9a8",
-    "vendor/kiswitch/3d_models/SW_Kailh_Choc_V1.stp.stl": "55afc59fed4fed728d28725f2cb5fdab98b4195eea1fc1fe47862f64277f7a41"
+    "vendor/kiswitch/3d_models/SW_Kailh_Choc_V1.stp.stl": "55afc59fed4fed728d28725f2cb5fdab98b4195eea1fc1fe47862f64277f7a41",
+    "vendor/keebio/3d_models/PJ-320A.step": "54889afbae4bb3f7deca2a39e9031752845b94e647c1ebbcac7ba1a5261e7e0e",
+    "vendor/keebio/3d_models/SK6812MINI-E v1.step": "5e400ef50c97651e6700ebf99ce63cac656825c3ce2f448249dcb6fb5f5aef46"
   },
   "mappings": {
     "candidates": {

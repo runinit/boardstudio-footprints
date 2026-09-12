@@ -25,7 +25,7 @@ const ceoloide = (await readdir(root, { withFileTypes: true }))
 const infused = await files(join(root, "vendor/infused-kim"), ".js");
 const models = (
   await Promise.all(
-    ["infused-kim", "kiswitch"].map((name) =>
+    ["infused-kim", "kiswitch", "keebio"].map((name) =>
       tree(join(root, `vendor/${name}/3d_models`)),
     ),
   )
@@ -35,6 +35,11 @@ const models = (
 const manifest = {
   schema: 1,
   sources: {
+    keebio: {
+      url: "https://github.com/keebio/Keebio-Parts.pretty",
+      commit: "1486bef23f020c31bf69123c93da199850cc7243",
+      license: "vendor/keebio/LICENSE",
+    },
     kiswitch: {
       url: "https://github.com/kiswitch/kiswitch",
       commit: "aefcf65038d48d2666ff14530d482be3c350fa6e",

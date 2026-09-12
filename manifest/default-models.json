@@ -85,5 +85,12 @@
   "ceoloide/battery_connector_molex_pico_ezmate_1x02": {
     "socket_3dmodel_filename": "${KIPRJMOD}/models/boardstudio/infused-kim/Molex_Ezmate_Pico_Socket_2pin.step",
     "cable_3dmodel_filename": "${KIPRJMOD}/models/boardstudio/infused-kim/Molex_Ezmate_Pico_Cable_2pin.step"
+  },
+  "ceoloide/led_sk6812mini-e": {
+    "led_3dmodel_filename": "${KIPRJMOD}/models/boardstudio/keebio/SK6812MINI-E v1.step",
+    "led_3dmodel_xyz_rotation": ""
+  },
+  "ceoloide/trrs_pj320a": {
+    "trrs_3dmodel_filename": "${KIPRJMOD}/models/boardstudio/keebio/PJ-320A.step"
   }
 }
