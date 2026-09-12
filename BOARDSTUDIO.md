@@ -117,3 +117,8 @@ correcting the downloaded housing and socket datums. Match `pcb_thickness`
 contacts on F/B at 0/90 degrees, including reversible layouts, alternate pad
 placement and plated holes. Explicit transforms remain authoritative.
 Solder-only and other board thicknesses remain unverified.
+
+The PTS636 THT reset footprint follows the manufacturer's 6.4 mm hole pitch
+and 1.2 mm drills. Pads are 1.9 mm to retain the previous 0.35 mm annular ring.
+This changes PCB geometry from upstream's 6.5 mm pitch and 1.0 mm drills;
+pad numbers and nets remain unchanged. A matching 3D default is still pending.

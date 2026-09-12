@@ -64,5 +64,12 @@
     "upstreamUrl": "https://raw.githubusercontent.com/ceoloide/ergogen-footprints/48935f54b456ff1503d78d6b17d9d146b54e8ade/switch_mx.js",
     "upstreamSha256": "6921ae4671c77292f5c970e726f15c93bd600f120b72a67167647cad64466156",
     "reason": "Place bundled MX switch opposite socket side and correct housing datum; retain explicit model transforms."
+  },
+  {
+    "path": "reset_switch_tht_top.js",
+    "upstreamUrl": "https://raw.githubusercontent.com/ceoloide/ergogen-footprints/48935f54b456ff1503d78d6b17d9d146b54e8ade/reset_switch_tht_top.js",
+    "upstreamSha256": "aeeea12c6ac89b7de5a7e4d73089aaf7aa752a924be50f201ce90675de4d9eb9",
+    "reason": "Match PTS636 THT manufacturer land pattern: 6.4 mm pitch, 1.2 mm holes; preserve 0.35 mm annular rings and net assignment.",
+    "datasheet": "https://www.ckswitches.com/media/2779/pts636.pdf"
   }
 ]

@@ -33,6 +33,10 @@ module.exports = {
     to: { type: 'net', value: 'RST' },
   },
   body: p => {
+    // Match the PTS636 THT drawing and preserve the 0.35 mm annular ring.
+    const pin_spacing = 6.4;
+    const pin_drill = 1.2;
+    const pin_pad = 1.9;
     const common_start = `
   (footprint "ceoloide:reset_switch_tht_top"
     (layer "${p.side}.Cu")
@@ -63,8 +67,8 @@ module.exports = {
     (fp_line (start 3 -1.75) (end 3 -1.5) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
         `
     const common_end = `
-    (pad "2" thru_hole circle (at -3.25 0 ${p.r}) (size 1.7 1.7) (drill 1.0) (layers "*.Cu" "*.Mask") ${p.from.str})
-    (pad "1" thru_hole circle (at 3.25 0 ${p.r}) (size 1.7 1.7) (drill 1.0) (layers "*.Cu" "*.Mask") ${p.to.str})
+    (pad "2" thru_hole circle (at ${-pin_spacing / 2} 0 ${p.r}) (size ${pin_pad} ${pin_pad}) (drill ${pin_drill}) (layers "*.Cu" "*.Mask") ${p.from.str})
+    (pad "1" thru_hole circle (at ${pin_spacing / 2} 0 ${p.r}) (size ${pin_pad} ${pin_pad}) (drill ${pin_drill}) (layers "*.Cu" "*.Mask") ${p.to.str})
   )
         `
     let final = common_start;
