@@ -1,6 +1,11 @@
 {
   "schema": 1,
   "sources": {
+    "foostan": {
+      "url": "https://github.com/foostan/kbd",
+      "commit": "1f12004a1c9714d0eabec4028c9ae4b259b41562",
+      "license": "vendor/foostan/LICENSE"
+    },
     "keebio": {
       "url": "https://github.com/keebio/Keebio-Parts.pretty",
       "commit": "1486bef23f020c31bf69123c93da199850cc7243",
@@ -28,7 +33,7 @@
       "battery_connector_molex_pico_ezmate_1x02.js": "3442bee097028b456399f205de28f82889c9644f859117b70a5186338b9c6f2a",
       "diode_tht_sod123.js": "f57b20d50876d2235682f820d818d5c599bec4f4b7adf559f20631e1018dfa46",
       "display_nice_view.js": "bdb2080a9697fc9ddbc8ec41bd8e2b81bfbcea31f4e220cf39a0094a342a66c7",
-      "display_ssd1306.js": "484fa0c1e8cc421e9f7100d1ff765f7646a59b9fe181415edcbf7be7c6db5065",
+      "display_ssd1306.js": "352518cd915c6308e86901debce4bef024226073dd9fe32e1b2607cc1ee3c99d",
       "led_sk6812mini-e.js": "406aacad994864b65dbe4b05cff02b1639f189bb8462f40cc579b5d216ea6ba6",
       "mcu_nice_nano.js": "435250311fedf4da930053bfbdc761b1181de0062afb2c85ba80458ea156622a",
       "mcu_supermini_nrf52840.js": "2ec5d1021a640179f5a6e098b8813f56937c2e4d26465d84ad20ec8ff2f50315",
@@ -110,7 +115,8 @@
     "vendor/kiswitch/3d_models/SW_Kailh_Choc_V1.stp": "669d72c083f226e1f9ee9e9dc8424c18e9641984223ba5422a1235d773a6a9a8",
     "vendor/kiswitch/3d_models/SW_Kailh_Choc_V1.stp.stl": "55afc59fed4fed728d28725f2cb5fdab98b4195eea1fc1fe47862f64277f7a41",
     "vendor/keebio/3d_models/PJ-320A.step": "54889afbae4bb3f7deca2a39e9031752845b94e647c1ebbcac7ba1a5261e7e0e",
-    "vendor/keebio/3d_models/SK6812MINI-E v1.step": "5e400ef50c97651e6700ebf99ce63cac656825c3ce2f448249dcb6fb5f5aef46"
+    "vendor/keebio/3d_models/SK6812MINI-E v1.step": "5e400ef50c97651e6700ebf99ce63cac656825c3ce2f448249dcb6fb5f5aef46",
+    "vendor/foostan/3d_models/OLED-Module-with-Pins.step": "42d7eb2588578a42bfc08d91a8f27e28db37b9c76ff62395bb9bb67a934b23b3"
   },
   "mappings": {
     "candidates": {

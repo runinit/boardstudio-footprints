@@ -19,8 +19,8 @@ Its `3d_models/` and `3d_model_src/` directories are retained verbatim.
 
 At the pins above this seed contains 24 ceoloide JavaScript footprint files,
 15 infused-kim JavaScript footprint files, 33 infused-kim STEP models,
-4 KiSwitch STP models, 4 corresponding STL previews and 2 Keebio STEP models.
-Default filename adapters cover 19 of 26 physical footprints; nine drawing
+4 KiSwitch STP models, 4 corresponding STL previews 2 Keebio STEP models and 1 Foostan OLED assembly.
+Default filename adapters cover 20 of 26 physical footprints; nine drawing
 utilities and four PCB-only entries need no component model.
 `manifest/coverage.json` records every entry. Other physical footprints and
 geometric alignment still require work; this repository does not
@@ -76,3 +76,10 @@ orientation unless a rotation override is supplied. Contact and marked-pin-3
 checks cover F/B at 0/90 degrees for both mounting modes. The PJ-320A default
 tracks the selected side and reversible-layout offset. All four legs fit their
 intended drilled slots in the three supported layouts on F/B at 0/90 degrees.
+
+The SSD1306 default uses Foostan's OLED/socket/header assembly at the pin recorded
+in `manifest/foostan.json`, retaining its MIT license. It translates the model's
+header origin to the footprint's display-center origin and mirrors the pin order
+on B. Eight KiCad checks cover its four mounting shafts on F/B at 0/90 degrees
+in single-sided and reversible layouts. `qa/oled-pin-labels.png` shows the model's
+etched pin labels used to verify signal order.

@@ -28,5 +28,11 @@
     "upstreamUrl": "https://raw.githubusercontent.com/ceoloide/ergogen-footprints/48935f54b456ff1503d78d6b17d9d146b54e8ade/trrs_pj320a.js",
     "upstreamSha256": "45453176dbaeefd71e2e6dd9003b01b7f1648eed1e8738a032eee8ad2307831c",
     "reason": "Add model parameters and align defaults with single-sided, reversible and symmetric layouts without changing pads or nets."
+  },
+  {
+    "path": "display_ssd1306.js",
+    "upstreamUrl": "https://raw.githubusercontent.com/ceoloide/ergogen-footprints/48935f54b456ff1503d78d6b17d9d146b54e8ade/display_ssd1306.js",
+    "upstreamSha256": "484fa0c1e8cc421e9f7100d1ff765f7646a59b9fe181415edcbf7be7c6db5065",
+    "reason": "Add OLED assembly model parameters; translate header origin to footprint center and mirror pin order on the back side without changing copper or nets."
   }
 ]

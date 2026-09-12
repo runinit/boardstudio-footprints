@@ -75,6 +75,23 @@
       ],
       "geometry": "Four leg solids fit four distinct drilled slots and span the board thickness",
       "signals": "SL, R2, TP and R1 match footprint pad numbers; symmetric layout joins R1 to TP as authored upstream"
+    },
+    "ceoloide/display_ssd1306": {
+      "sides": [
+        "F",
+        "B"
+      ],
+      "rotations": [
+        0,
+        90
+      ],
+      "layouts": [
+        "single-sided",
+        "reversible"
+      ],
+      "geometry": "Four socket mounting shafts fit their four 1 mm PCB drills",
+      "pinOrder": "Model etched labels SDA/SCK/VCC/GND match SDA/SCL/VCC/GND front pin order; B orientation mirrors it",
+      "visualEvidence": "qa/oled-pin-labels.png"
     }
   },
   "remaining": [

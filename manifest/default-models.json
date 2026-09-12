@@ -92,5 +92,8 @@
   },
   "ceoloide/trrs_pj320a": {
     "trrs_3dmodel_filename": "${KIPRJMOD}/models/boardstudio/keebio/PJ-320A.step"
+  },
+  "ceoloide/display_ssd1306": {
+    "display_3dmodel_filename": "${KIPRJMOD}/models/boardstudio/foostan/OLED-Module-with-Pins.step"
   }
 }

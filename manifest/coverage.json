@@ -1,10 +1,9 @@
 {
   "total": 39,
   "physical": 26,
-  "bound": 19,
+  "bound": 20,
   "missing": [
     "ceoloide/battery_connector_jst_ph_2",
-    "ceoloide/display_ssd1306",
     "ceoloide/mcu_supermini_nrf52840",
     "ceoloide/reset_switch_smd_side",
     "ceoloide/reset_switch_tht_top",
@@ -39,7 +38,7 @@
     {
       "name": "ceoloide/display_ssd1306",
       "kind": "physical",
-      "defaultBound": false,
+      "defaultBound": true,
       "alignment": "unverified"
     },
     {
