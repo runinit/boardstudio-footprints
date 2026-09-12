@@ -137,3 +137,13 @@ normal/reverse mounting and jumper variants. Optional model holes differ by
 0.06225 mm from the footprint. Nominal 0.64 mm square pins fit both 1 mm hole
 sets with one 0.03112 mm header translation, leaving 0.01712 mm clearance.
 This is a nominal geometry check, not manufactured-tolerance or socket proof.
+
+### nice!view default assembly
+
+The ceoloide nice!view default uses KiCad's 8.5 mm vertical five-pin socket.
+Its tails fit the existing 1 mm PCB holes. The previous generic 5 mm socket
+model had 0.8 by 0.65 mm rectangular tails that did not fit those holes.
+The default display/header elevation is therefore 3.5 mm higher than the
+original 5 mm socket assembly. Check enclosure clearance when adopting it.
+Explicit display, header and socket transforms remain available for other
+hardware. The footprint's copper, drill sizes and nets are unchanged.

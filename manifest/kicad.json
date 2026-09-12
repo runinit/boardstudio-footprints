@@ -21,6 +21,10 @@
     "README.md": {
       "upstreamPath": "README.md",
       "sha256": "b18f93f8c6d6b9e9cfe4f3cde8fed91db07d8ebb4dabd8b9a20663448a123a5d"
+    },
+    "PinSocket_1x05_P2.54mm_Vertical.step": {
+      "upstreamPath": "Connector_PinSocket_2.54mm.3dshapes/PinSocket_1x05_P2.54mm_Vertical.step",
+      "sha256": "c65e07a9f21343c3a79efcdc9c439aab14cb7f68bb491c08d95d1fdc007b20e1"
     }
   },
   "fitNotes": {

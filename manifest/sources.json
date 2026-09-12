@@ -42,7 +42,7 @@
       "battery_connector_jst_ph_2.js": "6d7131fc972e83866ab90f78577a49b9954ad8b2b3c2068c904ad3b215afdc94",
       "battery_connector_molex_pico_ezmate_1x02.js": "3442bee097028b456399f205de28f82889c9644f859117b70a5186338b9c6f2a",
       "diode_tht_sod123.js": "f57b20d50876d2235682f820d818d5c599bec4f4b7adf559f20631e1018dfa46",
-      "display_nice_view.js": "bdb2080a9697fc9ddbc8ec41bd8e2b81bfbcea31f4e220cf39a0094a342a66c7",
+      "display_nice_view.js": "3b4a840d088eab34cfcccdd6a254e3bc7db28dc2043e194b3315f6b27bedfc0f",
       "display_ssd1306.js": "352518cd915c6308e86901debce4bef024226073dd9fe32e1b2607cc1ee3c99d",
       "led_sk6812mini-e.js": "406aacad994864b65dbe4b05cff02b1639f189bb8462f40cc579b5d216ea6ba6",
       "mcu_nice_nano.js": "d88297a2c53f015d57160af31ca5b823ab0912af50cd53e64df86e7c01f7f5e0",
@@ -130,6 +130,7 @@
     "vendor/kicad/3d_models/JST_PH_S2B-PH-K_1x02_P2.00mm_Horizontal.step": "5343f72b9fe095ba999c44c2d42c2045032162dd11066bd4d36865caf3d1fba2",
     "vendor/kicad/3d_models/Panasonic_EVQPUJ_EVQPUA.step": "88502ca94b12719aef367ebf68ba17d37f02468b0763d5997e70d2b705b609c8",
     "vendor/kicad/3d_models/Panasonic_EVQPUL_EVQPUC.step": "c30e15d8da5c3856f0a5b19ab62f22eef9b06d69161963e77cdf6c0b09a7ac8c",
+    "vendor/kicad/3d_models/PinSocket_1x05_P2.54mm_Vertical.step": "c65e07a9f21343c3a79efcdc9c439aab14cb7f68bb491c08d95d1fdc007b20e1",
     "vendor/tsuki/3d_models/nrf52840.step": "c841576b727e83402939f7efa75149a68e9a9bd1f71e0315ca37b3bbc1a084b5"
   },
   "mappings": {

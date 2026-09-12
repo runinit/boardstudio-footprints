@@ -18,7 +18,13 @@
   "ceoloide/display_nice_view": {
     "niceview_3dmodel_filename": "${KIPRJMOD}/models/boardstudio/infused-kim/Nice_View.step",
     "pin_header_3dmodel_filename": "${KIPRJMOD}/models/boardstudio/infused-kim/PinHeader_2.54mm_1x-5.step",
-    "pin_socket_3dmodel_filename": "${KIPRJMOD}/models/boardstudio/infused-kim/PinSocket_2.54mm_5mm_1x-5.step"
+    "pin_socket_3dmodel_filename": "${KIPRJMOD}/models/boardstudio/kicad/PinSocket_1x05_P2.54mm_Vertical.step",
+    "niceview_3dmodel_xyz_offset": "",
+    "niceview_3dmodel_xyz_rotation": "",
+    "pin_header_3dmodel_xyz_offset": "",
+    "pin_header_3dmodel_xyz_rotation": "",
+    "pin_socket_3dmodel_xyz_offset": "",
+    "pin_socket_3dmodel_xyz_rotation": ""
   },
   "infused-kim/choc": {
     "switch_3dmodel_filename": "${KIPRJMOD}/models/boardstudio/infused-kim/Choc_V1_Switch.step",

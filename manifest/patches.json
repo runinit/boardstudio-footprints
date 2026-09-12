@@ -77,5 +77,11 @@
     "upstreamUrl": "https://raw.githubusercontent.com/ceoloide/ergogen-footprints/48935f54b456ff1503d78d6b17d9d146b54e8ade/mcu_supermini_nrf52840.js",
     "upstreamSha256": "2ec5d1021a640179f5a6e098b8813f56937c2e4d26465d84ad20ec8ff2f50315",
     "reason": "Align the Tsuki Supermini model with single-side and reversible pin order, preserving explicit transforms and copper."
+  },
+  {
+    "path": "display_nice_view.js",
+    "upstreamSha256": "bdb2080a9697fc9ddbc8ec41bd8e2b81bfbcea31f4e220cf39a0094a342a66c7",
+    "upstreamUrl": "https://raw.githubusercontent.com/ceoloide/ergogen-footprints/48935f54b456ff1503d78d6b17d9d146b54e8ade/display_nice_view.js",
+    "reason": "Align the display, header and socket model origins with their shared five-pin row; preserve explicit transforms."
   }
 ]
