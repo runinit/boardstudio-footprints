@@ -158,7 +158,7 @@
       "xy": "Both switch pins enter their drilled holes; socket terminals meet separate copper pads",
       "maximumSolderGapMm": 0.1,
       "modelPcbThicknessMm": 1.6,
-      "limitation": "Solder-only, non-default board thickness and Choc V2 remain unverified",
+      "limitation": "Non-default board thickness and Choc V2 remain unverified",
       "reversible": [
         false,
         true
@@ -171,7 +171,28 @@
         false,
         true
       ],
-      "cases": 32
+      "cases": 32,
+      "solderOnly": {
+        "cases": 8,
+        "sides": [
+          "F",
+          "B"
+        ],
+        "rotations": [
+          0,
+          90
+        ],
+        "reversible": [
+          false,
+          true
+        ],
+        "checks": [
+          "Both complete pin sections fit distinct actual PCB drills",
+          "Pin holes retain input/output nets",
+          "Socket terminal solids are absent"
+        ],
+        "command": "BOARDSTUDIO_FOOTPRINTS=../boardstudio-footprints node scripts/qa/model-contacts.cjs choc_solder_ceoloide"
+      }
     },
     "ceoloide/switch_mx": {
       "sides": [
@@ -199,7 +220,28 @@
       "orientation": "Switch housing sits opposite the selected socket side",
       "maximumSolderGapMm": 0.1,
       "modelPcbThicknessMm": 1.6,
-      "limitation": "Solder-only and non-default board thickness remain unverified"
+      "limitation": "Non-default board thickness remains unverified",
+      "solderOnly": {
+        "cases": 8,
+        "sides": [
+          "F",
+          "B"
+        ],
+        "rotations": [
+          0,
+          90
+        ],
+        "reversible": [
+          false,
+          true
+        ],
+        "checks": [
+          "Both complete pin sections fit distinct actual PCB drills",
+          "Pin holes retain input/output nets",
+          "Socket terminal solids are absent"
+        ],
+        "command": "BOARDSTUDIO_FOOTPRINTS=../boardstudio-footprints node scripts/qa/model-contacts.cjs mx_solder"
+      }
     },
     "infused-kim/conn_molex_pico_ezmate_1x05": {
       "sides": [
