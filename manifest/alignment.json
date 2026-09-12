@@ -171,6 +171,34 @@
         true
       ],
       "cases": 32
+    },
+    "ceoloide/switch_mx": {
+      "sides": [
+        "F",
+        "B"
+      ],
+      "rotations": [
+        0,
+        90
+      ],
+      "reversible": [
+        false,
+        true
+      ],
+      "hotswapPadsSameSide": [
+        false,
+        true
+      ],
+      "includePlatedHoles": [
+        false,
+        true
+      ],
+      "cases": 32,
+      "xy": "Both switch pins enter their drilled holes; socket terminals meet separate copper pads",
+      "orientation": "Switch housing sits opposite the selected socket side",
+      "maximumSolderGapMm": 0.1,
+      "modelPcbThicknessMm": 1.6,
+      "limitation": "Solder-only and non-default board thickness remain unverified"
     }
   },
   "remaining": [

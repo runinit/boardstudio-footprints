@@ -59,7 +59,11 @@
   },
   "ceoloide/switch_mx": {
     "switch_3dmodel_filename": "${KIPRJMOD}/models/boardstudio/kiswitch/SW_Cherry_MX_PCB.stp",
-    "hotswap_3dmodel_filename": "${KIPRJMOD}/models/boardstudio/kiswitch/SW_Hotswap_Kailh_MX.stp"
+    "hotswap_3dmodel_filename": "${KIPRJMOD}/models/boardstudio/kiswitch/SW_Hotswap_Kailh_MX.stp",
+    "switch_3dmodel_xyz_offset": "",
+    "switch_3dmodel_xyz_rotation": "",
+    "hotswap_3dmodel_xyz_offset": "",
+    "hotswap_3dmodel_xyz_rotation": ""
   },
   "infused-kim/smd_0805": {
     "component_1_3dmodel_filename": "${KIPRJMOD}/models/boardstudio/infused-kim/SMD_0805_Resistor.step",

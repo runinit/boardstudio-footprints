@@ -110,3 +110,10 @@ changing board thickness. 32 exported cases verify switch pins and socket contac
 degrees, including single/reversible, alternate pad placement and plated holes.
 Solder-only and Choc V2 remain outside this check. Explicit model transforms
 remain authoritative.
+
+The ceoloide MX hotswap default places the switch opposite the socket side,
+correcting the downloaded housing and socket datums. Match `pcb_thickness`
+(default 1.6 mm) to the board. 32 exported cases verify switch pins and socket
+contacts on F/B at 0/90 degrees, including reversible layouts, alternate pad
+placement and plated holes. Explicit transforms remain authoritative.
+Solder-only and other board thicknesses remain unverified.
