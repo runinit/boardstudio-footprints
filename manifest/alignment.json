@@ -108,6 +108,23 @@
       ],
       "geometry": "Four contact projections intersect the copper pads; both locating bosses fit their 0.75 mm NPTH holes when enabled",
       "selection": "include_bosses selects the matching default; custom filenames remain authoritative"
+    },
+    "ceoloide/battery_connector_jst_ph_2": {
+      "sides": [
+        "F",
+        "B"
+      ],
+      "rotations": [
+        0,
+        90
+      ],
+      "reversible": [
+        false,
+        true
+      ],
+      "xy": "Two straight entry shafts fit separate 0.75 mm holes; housing is centered on footprint",
+      "limitation": "Unloaded retention bends are not rigid-fit gauges. Physical insertion and PCB drill process remain unverified.",
+      "datasheet": "https://www.jst-mfg.com/product/pdf/eng/ePH.pdf"
     }
   },
   "remaining": [

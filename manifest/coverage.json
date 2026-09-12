@@ -1,9 +1,8 @@
 {
   "total": 39,
   "physical": 26,
-  "bound": 21,
+  "bound": 22,
   "missing": [
-    "ceoloide/battery_connector_jst_ph_2",
     "ceoloide/mcu_supermini_nrf52840",
     "ceoloide/reset_switch_tht_top",
     "ceoloide/rotary_encoder_ec11_ec12",
@@ -13,7 +12,7 @@
     {
       "name": "ceoloide/battery_connector_jst_ph_2",
       "kind": "physical",
-      "defaultBound": false,
+      "defaultBound": true,
       "alignment": "unverified"
     },
     {

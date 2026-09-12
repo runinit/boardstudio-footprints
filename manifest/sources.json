@@ -34,7 +34,7 @@
   },
   "footprints": {
     "ceoloide": {
-      "battery_connector_jst_ph_2.js": "fafe9a53df11fd99a820c9571e1bcbf5a8aedda98774e700642af5af5f00d853",
+      "battery_connector_jst_ph_2.js": "6d7131fc972e83866ab90f78577a49b9954ad8b2b3c2068c904ad3b215afdc94",
       "battery_connector_molex_pico_ezmate_1x02.js": "3442bee097028b456399f205de28f82889c9644f859117b70a5186338b9c6f2a",
       "diode_tht_sod123.js": "f57b20d50876d2235682f820d818d5c599bec4f4b7adf559f20631e1018dfa46",
       "display_nice_view.js": "bdb2080a9697fc9ddbc8ec41bd8e2b81bfbcea31f4e220cf39a0094a342a66c7",

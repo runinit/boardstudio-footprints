@@ -99,5 +99,10 @@
   "ceoloide/reset_switch_smd_side": {
     "reset_switch_3dmodel_filename": "${KIPRJMOD}/models/boardstudio/kicad/Panasonic_EVQPUJ_EVQPUA.step",
     "reset_switch_3dmodel_xyz_rotation": ""
+  },
+  "ceoloide/battery_connector_jst_ph_2": {
+    "battery_connector_3dmodel_filename": "${KIPRJMOD}/models/boardstudio/kicad/JST_PH_S2B-PH-K_1x02_P2.00mm_Horizontal.step",
+    "battery_connector_3dmodel_xyz_offset": "",
+    "battery_connector_3dmodel_xyz_rotation": ""
   }
 }

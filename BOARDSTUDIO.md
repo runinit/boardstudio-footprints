@@ -20,7 +20,7 @@ Its `3d_models/` and `3d_model_src/` directories are retained verbatim.
 At the pins above this seed contains 24 ceoloide JavaScript footprint files,
 15 infused-kim JavaScript footprint files, 33 infused-kim STEP models,
 4 KiSwitch STP models, 4 corresponding STL previews 2 Keebio STEP models 1 Foostan OLED assembly and 3 KiCad STEP assets.
-Default filename adapters cover 21 of 26 physical footprints; nine drawing
+Default filename adapters cover 22 of 26 physical footprints; nine drawing
 utilities and four PCB-only entries need no component model.
 `manifest/coverage.json` records every entry. Other physical footprints and
 geometric alignment still require work; this repository does not
@@ -88,5 +88,11 @@ Panasonic EVQPU reset models come from the current KiCad package library at the
 pin in `manifest/kicad.json`, with its CC-BY-SA license and design exception.
 The default selects the boss/no-boss variant from `include_bosses`; explicit
 filenames remain authoritative. Eight KiCad checks cover contacts and locating
-bosses on F/B at 0/90 degrees. The vendored JST asset remains an unassigned
-candidate because its bent pin sections fail the current rigid hole-fit check.
+bosses on F/B at 0/90 degrees.
+
+JST PH S2B-PH-K now uses the pinned KiCad model, centered and oriented for
+the selected side. Eight exported cases verify entry shafts and housing placement.
+The model includes unloaded bent pins: full-depth rigid containment is not a
+physical insertion test. The manufacturer's reference drill range is 0.7–0.8 mm,
+with a larger-hole advisory for hard PCBs; existing 0.75 mm drills are unchanged.
+See `manifest/kicad.json` for the datasheet and fit limitation.

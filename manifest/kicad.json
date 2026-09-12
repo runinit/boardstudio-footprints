@@ -23,7 +23,8 @@
       "sha256": "b18f93f8c6d6b9e9cfe4f3cde8fed91db07d8ebb4dabd8b9a20663448a123a5d"
     }
   },
-  "unassignedCandidates": {
-    "JST_PH_S2B-PH-K_1x02_P2.00mm_Horizontal.step": "Bent pin section extends beyond the 0.75 mm PCB holes in rigid geometry; no default assigned."
+  "fitNotes": {
+    "JST_PH_S2B-PH-K_1x02_P2.00mm_Horizontal.step": "Entry shafts fit the footprint drills at the seating plane. Unloaded bent pins extend outside the rigid drill envelope; this is not a fabrication fit guarantee. JST specifies 0.7\u20130.8 mm reference holes and advises larger holes for hard PCBs.",
+    "datasheet": "https://www.jst-mfg.com/product/pdf/eng/ePH.pdf"
   }
 }
