@@ -153,3 +153,16 @@ display/header elevations. Its `display_3dmodel_side` override is preserved,
 including reversible back mounting. Unlike ceoloide, this upstream footprint
 provides jumper pads without connecting tracks: route sockets to their local
 jumper pads before fabrication. The model correction does not add copper.
+
+### Infused-kim nice!nano socket assembly
+
+The controller now uses two KiCad 8.5 mm sockets at 15.24 mm row spacing.
+`scripts/assembleNanoSockets.py` positions unchanged copies of the pinned
+single-row source; provenance and translations are in `manifest/kicad.json`.
+The paired model retains KiCad's license and model exception.
+
+The MCU/header assembly is 3.5 mm higher than the original 5 mm socket
+assembly. Model-origin offsets also correct MCU/header hole alignment.
+Hole sizes and centers remain unchanged; review enclosure clearance.
+Custom jumper pads now rotate with the footprint, fixing disconnected
+socket-to-jumper paths at rotated placements.

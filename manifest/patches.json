@@ -89,5 +89,11 @@
     "upstreamSha256": "de3f90028fd5e11e5c3879b9759877f5c1a4a987e9d2da273602e65f9cf97b99",
     "upstreamUrl": "https://raw.githubusercontent.com/infused-kim/kb_ergogen_fp/bb80a207d8a6fa7b9245caad2c2d97e2adc2f612/nice_view.js",
     "reason": "Align display/header/socket models with standard8.5mm socket and preserve model-side and transform overrides."
+  },
+  {
+    "path": "vendor/infused-kim/nice_nano_pretty.js",
+    "upstreamSha256": "622b91349400c29fe076bcca565131489aa878839b52927b8a5fafb3f855d71c",
+    "upstreamUrl": "https://raw.githubusercontent.com/infused-kim/kb_ergogen_fp/bb80a207d8a6fa7b9245caad2c2d97e2adc2f612/nice_nano_pretty.js",
+    "reason": "Align MCU/header datums and paired8.5mm KiCad sockets; rotate custom jumper pads with the footprint to retain trace connectivity."
   }
 ]

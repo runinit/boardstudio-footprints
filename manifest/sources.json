@@ -71,7 +71,7 @@
       "vendor/infused-kim/diode.js": "197bfe0616a32339ddd659a059b45cdf559b1af83d5d269c0df8e8f07b6bab85",
       "vendor/infused-kim/icon_bat.js": "834dc8e17f1fa71c36040002d72c79a3002a5d2e0594653499ce3e8853dec000",
       "vendor/infused-kim/mounting_hole.js": "b183f9af41e22d200273a094c3ac419d75b44ec7d2d09e80e00b218e786c6116",
-      "vendor/infused-kim/nice_nano_pretty.js": "622b91349400c29fe076bcca565131489aa878839b52927b8a5fafb3f855d71c",
+      "vendor/infused-kim/nice_nano_pretty.js": "a3c84af9f6909fd56b3221b19b5815d8d1e37a98a4d804349d798f9a691190a5",
       "vendor/infused-kim/nice_view.js": "db3102ef3c0789c16d195688c620ddcfcea02b98f90d4938f99ecee04941f239",
       "vendor/infused-kim/pads.js": "3953d2102230825d765ae1567c8085264b83f2b8de085ea21cfb0bcb064b1234",
       "vendor/infused-kim/point_debugger.js": "2d26f255d73a57260757e15273512c05541b8dc50a9685ac05842fa696e2d1bd",
@@ -131,6 +131,8 @@
     "vendor/kicad/3d_models/Panasonic_EVQPUJ_EVQPUA.step": "88502ca94b12719aef367ebf68ba17d37f02468b0763d5997e70d2b705b609c8",
     "vendor/kicad/3d_models/Panasonic_EVQPUL_EVQPUC.step": "c30e15d8da5c3856f0a5b19ab62f22eef9b06d69161963e77cdf6c0b09a7ac8c",
     "vendor/kicad/3d_models/PinSocket_1x05_P2.54mm_Vertical.step": "c65e07a9f21343c3a79efcdc9c439aab14cb7f68bb491c08d95d1fdc007b20e1",
+    "vendor/kicad/3d_models/PinSocket_1x12_P2.54mm_Vertical.step": "34b8ead6104d7dfde9212917fbd6f7c9e04e4ad5a64ad45e391f99451a4aaad4",
+    "vendor/kicad/3d_models/PinSocket_2x12_W15.24mm_Vertical.step": "1d0ad0687f3fd0cbb745c8f51c709080ebb8a4a69f4221cec473669b4654137c",
     "vendor/tsuki/3d_models/nrf52840.step": "c841576b727e83402939f7efa75149a68e9a9bd1f71e0315ca37b3bbc1a084b5"
   },
   "mappings": {

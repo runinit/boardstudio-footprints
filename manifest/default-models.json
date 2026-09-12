@@ -42,7 +42,7 @@
   "infused-kim/nice_nano_pretty": {
     "mcu_3dmodel_filename": "${KIPRJMOD}/models/boardstudio/infused-kim/Nice_Nano_V2.step",
     "header_3dmodel_filename": "${KIPRJMOD}/models/boardstudio/infused-kim/PinHeader_2.54mm_2x-12.step",
-    "socket_3dmodel_filename": "${KIPRJMOD}/models/boardstudio/infused-kim/PinSocket_2.54mm_5mm_2x-12.step"
+    "socket_3dmodel_filename": "${KIPRJMOD}/models/boardstudio/kicad/PinSocket_2x12_W15.24mm_Vertical.step"
   },
   "infused-kim/nice_view": {
     "display_3dmodel_filename": "${KIPRJMOD}/models/boardstudio/infused-kim/Nice_View.step",
