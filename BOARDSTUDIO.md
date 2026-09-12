@@ -187,3 +187,11 @@ feet and `pcb_thickness` (default 1.6 mm). Explicit XYZ overrides win.
 Sixteen native/KiCad candidate exports verified both mounting modes, sides,
 0/90-degree rotations, and reversible variants against actual drill holes
 and input/output nets. The socket model is not supplied by this asset.
+
+### Trackpoint extension clearance
+
+The bundled T460S extension crosses the PCB with a 5 mm outer diameter.
+Default binding rejects a smaller center drill instead of exporting intersecting
+geometry. The default 5.5 mm drill remains supported. Explicit model or transform
+overrides are retained and require their own fit check. A compatible extension
+for the documented 3.5 mm drill option is not currently bundled.
