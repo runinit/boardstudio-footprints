@@ -269,6 +269,35 @@
       ],
       "limits": "Validates the default SMD model with optional THT pads; does not validate an alternative through-hole diode model.",
       "command": "BOARDSTUDIO_FOOTPRINTS=../boardstudio-footprints node scripts/qa/model-contacts.cjs diode_infused"
+    },
+    "ceoloide/switch_gateron_ks27_ks33": {
+      "model": "gdek/KS33.stp",
+      "sides": [
+        "F",
+        "B"
+      ],
+      "rotations": [
+        0,
+        90
+      ],
+      "cases": 24,
+      "modes": [
+        "hotswap plus solder",
+        "solder only"
+      ],
+      "reversible": [
+        false,
+        true
+      ],
+      "customSolderPads": "Eight additional reversible cases",
+      "checks": [
+        "Central post and both terminals fit exactly one actual exported PCB drill each",
+        "Terminal holes retain distinct input/output nets",
+        "Four source-model mounting feet establish Z=3.25 datum",
+        "Production native worker, visible rendering, and ZIP bytes/license delivery pass"
+      ],
+      "limits": "KS-33 only; KS-27 equivalence, socket model, arbitrary rotations and other board thicknesses remain unverified.",
+      "evidence": "model-source-candidates/gildev-gdek-629946873bc5 in integration workspace"
     }
   },
   "remaining": [
