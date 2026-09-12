@@ -1,0 +1,29 @@
+{
+  "repository": "https://gitlab.com/kicad/libraries/kicad-packages3D",
+  "commit": "e62ed1fc7862da83f789bd562671b5e4b82afcdf",
+  "files": {
+    "JST_PH_S2B-PH-K_1x02_P2.00mm_Horizontal.step": {
+      "upstreamPath": "Connector_JST.3dshapes/JST_PH_S2B-PH-K_1x02_P2.00mm_Horizontal.step",
+      "sha256": "5343f72b9fe095ba999c44c2d42c2045032162dd11066bd4d36865caf3d1fba2"
+    },
+    "Panasonic_EVQPUJ_EVQPUA.step": {
+      "upstreamPath": "Button_Switch_SMD.3dshapes/Panasonic_EVQPUJ_EVQPUA.step",
+      "sha256": "88502ca94b12719aef367ebf68ba17d37f02468b0763d5997e70d2b705b609c8"
+    },
+    "Panasonic_EVQPUL_EVQPUC.step": {
+      "upstreamPath": "Button_Switch_SMD.3dshapes/Panasonic_EVQPUL_EVQPUC.step",
+      "sha256": "c30e15d8da5c3856f0a5b19ab62f22eef9b06d69161963e77cdf6c0b09a7ac8c"
+    },
+    "LICENSE.md": {
+      "upstreamPath": "LICENSE.md",
+      "sha256": "45d2bce75e5a4208f5afb01b8fb2c406e700371c4fe2b5f5cd5c443d46db4d8f"
+    },
+    "README.md": {
+      "upstreamPath": "README.md",
+      "sha256": "b18f93f8c6d6b9e9cfe4f3cde8fed91db07d8ebb4dabd8b9a20663448a123a5d"
+    }
+  },
+  "unassignedCandidates": {
+    "JST_PH_S2B-PH-K_1x02_P2.00mm_Horizontal.step": "Bent pin section extends beyond the 0.75 mm PCB holes in rigid geometry; no default assigned."
+  }
+}

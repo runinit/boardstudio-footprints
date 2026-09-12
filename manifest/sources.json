@@ -1,6 +1,11 @@
 {
   "schema": 1,
   "sources": {
+    "kicad": {
+      "url": "https://gitlab.com/kicad/libraries/kicad-packages3D",
+      "commit": "e62ed1fc7862da83f789bd562671b5e4b82afcdf",
+      "license": "vendor/kicad/LICENSE"
+    },
     "foostan": {
       "url": "https://github.com/foostan/kbd",
       "commit": "1f12004a1c9714d0eabec4028c9ae4b259b41562",
@@ -40,7 +45,7 @@
       "mounting_hole_npth.js": "73d1dbff6ac90d29c819749c10942e634d89d66e5c8c8f3801b65a818159085d",
       "mounting_hole_plated.js": "775c2eada3c8003f50737ad37b4c227c07c8bc618438c58c5bd386cd1983818e",
       "power_switch_smd_side.js": "4271a1e95ff82bfa490dcee4050927c81e0c5a517d1c24150bb07efde84f81fb",
-      "reset_switch_smd_side.js": "232943426b5320029bbd373c6710526bc3fadab474f7473c78d4bcdd65ff0785",
+      "reset_switch_smd_side.js": "36c9cd86ccd4360d642a9937ed4334c61cbeaabc05f6714fc832942659118942",
       "reset_switch_tht_top.js": "aeeea12c6ac89b7de5a7e4d73089aaf7aa752a924be50f201ce90675de4d9eb9",
       "rotary_encoder_ec11_ec12.js": "2e4ecbd9db3f15a7dee45ed6bdc337bb3d1fad4aff8b038b1107daa772312559",
       "switch_choc_v1_v2.js": "26b32559b9724dc6106190aedcd710e19a304e6bb16036708f41d2d4369c36c9",
@@ -116,7 +121,10 @@
     "vendor/kiswitch/3d_models/SW_Kailh_Choc_V1.stp.stl": "55afc59fed4fed728d28725f2cb5fdab98b4195eea1fc1fe47862f64277f7a41",
     "vendor/keebio/3d_models/PJ-320A.step": "54889afbae4bb3f7deca2a39e9031752845b94e647c1ebbcac7ba1a5261e7e0e",
     "vendor/keebio/3d_models/SK6812MINI-E v1.step": "5e400ef50c97651e6700ebf99ce63cac656825c3ce2f448249dcb6fb5f5aef46",
-    "vendor/foostan/3d_models/OLED-Module-with-Pins.step": "42d7eb2588578a42bfc08d91a8f27e28db37b9c76ff62395bb9bb67a934b23b3"
+    "vendor/foostan/3d_models/OLED-Module-with-Pins.step": "42d7eb2588578a42bfc08d91a8f27e28db37b9c76ff62395bb9bb67a934b23b3",
+    "vendor/kicad/3d_models/JST_PH_S2B-PH-K_1x02_P2.00mm_Horizontal.step": "5343f72b9fe095ba999c44c2d42c2045032162dd11066bd4d36865caf3d1fba2",
+    "vendor/kicad/3d_models/Panasonic_EVQPUJ_EVQPUA.step": "88502ca94b12719aef367ebf68ba17d37f02468b0763d5997e70d2b705b609c8",
+    "vendor/kicad/3d_models/Panasonic_EVQPUL_EVQPUC.step": "c30e15d8da5c3856f0a5b19ab62f22eef9b06d69161963e77cdf6c0b09a7ac8c"
   },
   "mappings": {
     "candidates": {

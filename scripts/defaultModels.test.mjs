@@ -27,3 +27,32 @@ assert.deepEqual(
   defaultModels("ceoloide/power_switch_smd_side").switch_3dmodel_xyz_rotation,
   [-90, 0, -90],
 );
+
+const vm = await import("node:vm");
+const resetContext = { module: { exports: {} } };
+vm.runInNewContext(
+  bindDefaults(
+    await readFile(
+      new URL("../reset_switch_smd_side.js", import.meta.url),
+      "utf8",
+    ),
+    "ceoloide/reset_switch_smd_side",
+  ),
+  resetContext,
+);
+const reset = resetContext.module.exports;
+const resetParams = {
+  ...reset.params,
+  include_bosses: true,
+  side: "F",
+  at: "(at 0 0)",
+  ref: "SW1",
+  ref_hide: "",
+  r: 0,
+};
+assert.match(reset.body(resetParams), /Panasonic_EVQPUL_EVQPUC\.step/);
+
+assert.match(
+  reset.body({ ...resetParams, reset_switch_3dmodel_filename: "custom.step" }),
+  /custom\.step/,
+);

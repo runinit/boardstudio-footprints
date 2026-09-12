@@ -19,8 +19,8 @@ Its `3d_models/` and `3d_model_src/` directories are retained verbatim.
 
 At the pins above this seed contains 24 ceoloide JavaScript footprint files,
 15 infused-kim JavaScript footprint files, 33 infused-kim STEP models,
-4 KiSwitch STP models, 4 corresponding STL previews 2 Keebio STEP models and 1 Foostan OLED assembly.
-Default filename adapters cover 20 of 26 physical footprints; nine drawing
+4 KiSwitch STP models, 4 corresponding STL previews 2 Keebio STEP models 1 Foostan OLED assembly and 3 KiCad STEP assets.
+Default filename adapters cover 21 of 26 physical footprints; nine drawing
 utilities and four PCB-only entries need no component model.
 `manifest/coverage.json` records every entry. Other physical footprints and
 geometric alignment still require work; this repository does not
@@ -83,3 +83,10 @@ header origin to the footprint's display-center origin and mirrors the pin order
 on B. Eight KiCad checks cover its four mounting shafts on F/B at 0/90 degrees
 in single-sided and reversible layouts. `qa/oled-pin-labels.png` shows the model's
 etched pin labels used to verify signal order.
+
+Panasonic EVQPU reset models come from the current KiCad package library at the
+pin in `manifest/kicad.json`, with its CC-BY-SA license and design exception.
+The default selects the boss/no-boss variant from `include_bosses`; explicit
+filenames remain authoritative. Eight KiCad checks cover contacts and locating
+bosses on F/B at 0/90 degrees. The vendored JST asset remains an unassigned
+candidate because its bent pin sections fail the current rigid hole-fit check.

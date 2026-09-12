@@ -92,6 +92,22 @@
       "geometry": "Four socket mounting shafts fit their four 1 mm PCB drills",
       "pinOrder": "Model etched labels SDA/SCK/VCC/GND match SDA/SCL/VCC/GND front pin order; B orientation mirrors it",
       "visualEvidence": "qa/oled-pin-labels.png"
+    },
+    "ceoloide/reset_switch_smd_side": {
+      "sides": [
+        "F",
+        "B"
+      ],
+      "rotations": [
+        0,
+        90
+      ],
+      "variants": [
+        "EVQPUJ/EVQPUA (no bosses)",
+        "EVQPUL/EVQPUC (bosses)"
+      ],
+      "geometry": "Four contact projections intersect the copper pads; both locating bosses fit their 0.75 mm NPTH holes when enabled",
+      "selection": "include_bosses selects the matching default; custom filenames remain authoritative"
     }
   },
   "remaining": [

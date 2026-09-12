@@ -124,11 +124,13 @@ module.exports = {
     (pad "" np_thru_hole circle (at 0 1.375 ${180 + p.r}) (size 0.75 0.75) (drill 0.75) (layers "*.Cu" "*.Mask"))
     `
 
+    // Use the selected side's model frame; explicit transforms remain authoritative.
+    const model_rotation = p.reset_switch_3dmodel_xyz_rotation || [0, 0, p.side === 'B' ? 180 : 0];
     const reset_switch_3dmodel = `
     (model ${p.reset_switch_3dmodel_filename}
       (offset (xyz ${p.reset_switch_3dmodel_xyz_offset[0]} ${p.reset_switch_3dmodel_xyz_offset[1]} ${p.reset_switch_3dmodel_xyz_offset[2]}))
       (scale (xyz ${p.reset_switch_3dmodel_xyz_scale[0]} ${p.reset_switch_3dmodel_xyz_scale[1]} ${p.reset_switch_3dmodel_xyz_scale[2]}))
-      (rotate (xyz ${p.reset_switch_3dmodel_xyz_rotation[0]} ${p.reset_switch_3dmodel_xyz_rotation[1]} ${p.reset_switch_3dmodel_xyz_rotation[2]}))
+      (rotate (xyz ${model_rotation[0]} ${model_rotation[1]} ${model_rotation[2]}))
     )
     `
 

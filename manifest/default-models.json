@@ -95,5 +95,9 @@
   },
   "ceoloide/display_ssd1306": {
     "display_3dmodel_filename": "${KIPRJMOD}/models/boardstudio/foostan/OLED-Module-with-Pins.step"
+  },
+  "ceoloide/reset_switch_smd_side": {
+    "reset_switch_3dmodel_filename": "${KIPRJMOD}/models/boardstudio/kicad/Panasonic_EVQPUJ_EVQPUA.step",
+    "reset_switch_3dmodel_xyz_rotation": ""
   }
 }
