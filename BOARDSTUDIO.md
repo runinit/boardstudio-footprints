@@ -17,14 +17,17 @@ Its `3d_models/` and `3d_model_src/` directories are retained verbatim.
 
 ## Coverage snapshot
 
-At the pins above this seed contains 24 ceoloide JavaScript footprint files,
-15 infused-kim JavaScript footprint files, 33 infused-kim STEP models,
-4 KiSwitch STP models, 4 corresponding STL previews 2 Keebio STEP models 1 Foostan OLED assembly and 3 KiCad STEP assets.
-Default filename adapters cover 22 of 26 physical footprints; nine drawing
-utilities and four PCB-only entries need no component model.
-`manifest/coverage.json` records every entry. Other physical footprints and
-geometric alignment still require work; this repository does not
-claim that every footprint has a model.
+The fork contains 24 ceoloide and 15 infused-kim footprint modules, with
+52 model assets: 48 STEP/STP sources and four STL companions. These include
+33 infused-kim, eight KiSwitch, six KiCad, two Keebio, and one each from
+Foostan, Tsuki and GDEK.
+
+Default bindings cover 24 of 26 physical footprints. The THT reset switch
+and EC11/EC12 encoder still need matching models. Nine drawing utilities
+and four PCB-only entries need no component model.
+`manifest/coverage.json` records every entry; `manifest/alignment.json`
+records the scope and limitations of completed geometry checks. Default
+coverage does not establish complete variant or fabrication validation.
 
 ## License provenance
 
@@ -41,9 +44,8 @@ The application stages the transformed modules and model assets, preserving the
 upstream source files. `manifest/default-models.json` owns parameter mappings.
 
 The KiSwitch sources and checksums are recorded in `manifest/kiswitch.json`.
-`manifest/patches.json` records the point-debugger syntax correction and 0805
-transform-parameter/back-side placement corrections applied to the vendored
-Infused-Kim source. Other source files retain upstream bytes.
+`manifest/patches.json` records intentional footprint corrections and their
+original hashes. Unpatched source files retain upstream bytes.
 
 Run `npm test` to validate the inventory. GUI integration tests additionally
 generate each mapped footprint and compare its non-model KiCad syntax with the
@@ -61,8 +63,8 @@ Ceoloide's SSSS811101 power switch and SOD-123 diode use the bundled Infused-Kim
 models with explicit rotations and diode height offset. `manifest/alignment.json`
 records actual KiCad STEP export checks for terminal-to-copper placement on F/B
 at 0/90 degrees, plus diode cathode orientation. The ceoloide Panasonic reset
-switch is a different package from Infused-Kim's bundled reset model and remains
-unmapped pending a matching asset.
+switch uses matching KiCad EVQPU models. `include_bosses` selects the bossed
+or unbossed variant; contact and locating-hole checks cover F/B at 0/90 degrees.
 
 Ceoloide's two-pin Pico-EZmate connector now accepts socket/cable filenames and
 scale, rotation and offset parameters. Default models follow its selected side;
@@ -108,15 +110,18 @@ socket side. Model transforms use `pcb_thickness` (1.6 mm by default) and
 a 6.6 mm keycap seating offset; match `pcb_thickness` to the board when
 changing board thickness. 32 exported cases verify switch pins and socket contacts on F/B at 0/90
 degrees, including single/reversible, alternate pad placement and plated holes.
-Solder-only and Choc V2 remain outside this check. Explicit model transforms
-remain authoritative.
+Eight additional solder-only cases verify both pin sections fit their drills,
+retain input/output nets and omit socket solids. Choc V2 and non-default board
+thickness remain unverified. Explicit model transforms remain authoritative.
 
 The ceoloide MX hotswap default places the switch opposite the socket side,
 correcting the downloaded housing and socket datums. Match `pcb_thickness`
 (default 1.6 mm) to the board. 32 exported cases verify switch pins and socket
 contacts on F/B at 0/90 degrees, including reversible layouts, alternate pad
 placement and plated holes. Explicit transforms remain authoritative.
-Solder-only and other board thicknesses remain unverified.
+Eight additional solder-only cases verify both pin sections fit their drills,
+retain input/output nets and omit socket solids. Other board thicknesses remain
+unverified.
 
 The PTS636 THT reset footprint follows the manufacturer's 6.4 mm hole pitch
 and 1.2 mm drills. Pads are 1.9 mm to retain the previous 0.35 mm annular ring.
@@ -184,9 +189,9 @@ represents KS-33; it does not establish KS-27 body or travel equivalence.
 Hotswap mounts the switch opposite the footprint side; solder-only mounts
 it on the footprint side. Automatic transforms use the model's four planar
 feet and `pcb_thickness` (default 1.6 mm). Explicit XYZ overrides win.
-Sixteen native/KiCad candidate exports verified both mounting modes, sides,
-0/90-degree rotations, and reversible variants against actual drill holes
-and input/output nets. The socket model is not supplied by this asset.
+Twenty-four native/KiCad exports verified both mounting modes, sides,
+0/90-degree rotations, reversible variants and custom solder-pad positions
+against actual drill holes and input/output nets. The socket model is not supplied by this asset.
 
 ### Trackpoint extension clearance
 
