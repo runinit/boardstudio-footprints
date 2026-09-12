@@ -20,6 +20,8 @@
 // Params:
 //    side: default is B for Back
 //      the side on which to place the single-side footprint and designator, either F or B
+//    pcb_thickness: default is 1.6 mm
+//      Must match the PCB thickness when using bundled model transforms.
 //    reversible: default is false
 //      if true, the footprint will be placed on both sides so that the PCB can be
 //      reversible
@@ -182,6 +184,7 @@ module.exports = {
   params: {
     designator: 'S',
     side: 'B',
+    pcb_thickness: 1.6,
     reversible: false,
     hotswap_pads_same_side: false,
     include_traces_vias: true,
@@ -483,27 +486,38 @@ module.exports = {
     (pad "" thru_hole circle (at ${stab_offset_x_back}5.00 ${stab_offset_y}5.15 ${p.r}) (size 1.9 1.9) (drill 1.6) (layers "*.Cu" "*.Mask") ${p.solder && p.hotswap ? p.to.str : p.include_stabilizer_nets ? p.LEFTSTAB : ''})
     `
 
+    // `side` selects the socket; the switch and cap sit across the PCB.
+    const keycap_height = 6.6;
+    const model_rotation = p.side === 'B' ? [180, 0, 0] : [0, 180, 0];
+    const model_offset = [0, 0, -p.pcb_thickness];
+    const cap_offset = [0, 0, -p.pcb_thickness - keycap_height];
+    const switch_rotation = p.switch_3dmodel_xyz_rotation || model_rotation;
+    const switch_offset = p.switch_3dmodel_xyz_offset || model_offset;
+    const hotswap_rotation = p.hotswap_3dmodel_xyz_rotation || model_rotation;
+    const hotswap_offset = p.hotswap_3dmodel_xyz_offset || model_offset;
+    const keycap_rotation = p.keycap_3dmodel_xyz_rotation || model_rotation;
+    const keycap_offset = p.keycap_3dmodel_xyz_offset || cap_offset;
     const switch_3dmodel = `
     (model ${p.switch_3dmodel_filename}
-      (offset (xyz ${p.switch_3dmodel_xyz_offset[0]} ${p.switch_3dmodel_xyz_offset[1]} ${p.switch_3dmodel_xyz_offset[2]}))
+      (offset (xyz ${switch_offset[0]} ${switch_offset[1]} ${switch_offset[2]}))
       (scale (xyz ${p.switch_3dmodel_xyz_scale[0]} ${p.switch_3dmodel_xyz_scale[1]} ${p.switch_3dmodel_xyz_scale[2]}))
-      (rotate (xyz ${p.switch_3dmodel_xyz_rotation[0]} ${p.switch_3dmodel_xyz_rotation[1]} ${p.switch_3dmodel_xyz_rotation[2]}))
+      (rotate (xyz ${switch_rotation[0]} ${switch_rotation[1]} ${switch_rotation[2]}))
     )
     `
 
     const hotswap_3dmodel = `
     (model ${p.hotswap_3dmodel_filename}
-      (offset (xyz ${p.hotswap_3dmodel_xyz_offset[0]} ${p.hotswap_3dmodel_xyz_offset[1]} ${p.hotswap_3dmodel_xyz_offset[2]}))
+      (offset (xyz ${hotswap_offset[0]} ${hotswap_offset[1]} ${hotswap_offset[2]}))
       (scale (xyz ${p.hotswap_3dmodel_xyz_scale[0]} ${p.hotswap_3dmodel_xyz_scale[1]} ${p.hotswap_3dmodel_xyz_scale[2]}))
-      (rotate (xyz ${p.hotswap_3dmodel_xyz_rotation[0]} ${p.hotswap_3dmodel_xyz_rotation[1]} ${p.hotswap_3dmodel_xyz_rotation[2]}))
+      (rotate (xyz ${hotswap_rotation[0]} ${hotswap_rotation[1]} ${hotswap_rotation[2]}))
     )
 	  `
 
     const keycap_3dmodel = `
     (model ${p.keycap_3dmodel_filename}
-      (offset (xyz ${p.keycap_3dmodel_xyz_offset[0]} ${p.keycap_3dmodel_xyz_offset[1]} ${p.keycap_3dmodel_xyz_offset[2]}))
+      (offset (xyz ${keycap_offset[0]} ${keycap_offset[1]} ${keycap_offset[2]}))
       (scale (xyz ${p.keycap_3dmodel_xyz_scale[0]} ${p.keycap_3dmodel_xyz_scale[1]} ${p.keycap_3dmodel_xyz_scale[2]}))
-      (rotate (xyz ${p.keycap_3dmodel_xyz_rotation[0]} ${p.keycap_3dmodel_xyz_rotation[1]} ${p.keycap_3dmodel_xyz_rotation[2]}))
+      (rotate (xyz ${keycap_rotation[0]} ${keycap_rotation[1]} ${keycap_rotation[2]}))
     )
 	  `
 

@@ -102,3 +102,10 @@ uses the bundled library's 5 mm socket spacing. Eight KiCad-exported checks
 verify 24 main hole centers, module clearance and MCU package orientation.
 Explicit XYZ transforms still override the default. Optional extra pins and
 physical socket/header solids are outside this check's scope.
+
+The ceoloide Choc V1 hotswap default places the switch and cap opposite the
+socket side. Model transforms use `pcb_thickness` (1.6 mm by default) and
+a 6.6 mm keycap seating offset; match `pcb_thickness` to the board when
+changing board thickness. Four exported cases verify switch pins and socket
+contacts on F/B at 0/90 degrees. Reversible and alternate pad layouts are
+not covered by this check. Explicit model transforms remain authoritative.

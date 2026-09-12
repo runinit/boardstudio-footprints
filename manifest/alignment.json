@@ -143,6 +143,21 @@
       "socketHeightMm": 5,
       "orientation": "MCU package faces toward or away from PCB according to reverse_mount",
       "limitation": "Socket/header solids and optional extra pins are not covered by these checks"
+    },
+    "ceoloide/switch_choc_v1_v2": {
+      "sides": [
+        "F",
+        "B"
+      ],
+      "rotations": [
+        0,
+        90
+      ],
+      "scope": "Single-sided Choc V1 hotswap, default pad layout",
+      "xy": "Both switch pins enter their drilled holes; socket terminals meet separate copper pads",
+      "maximumSolderGapMm": 0.1,
+      "modelPcbThicknessMm": 1.6,
+      "limitation": "Reversible, alternate pad layouts, non-default board thickness and Choc V2 remain unverified"
     }
   },
   "remaining": [
