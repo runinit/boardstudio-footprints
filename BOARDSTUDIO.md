@@ -221,3 +221,10 @@ positions, including single-sided footprints.
 The automatic model requires round stabilizer holes and a center drill of
 at least 4.8 mm. Custom models and transforms remain authoritative. Alternate
 pad placement, oval stabilizers and other board thicknesses are unverified.
+
+Infused-kim reset and power-switch defaults each pass eight native KiCad
+exports covering requested F/B sides, 0/90 degrees and reverse settings.
+All physical terminals fit their copper pads within a 0.1 mm solder gap.
+Reset pads retain GND/RST. The power switch's middle terminal connects to
+BAT_P (pad 2 on F, pad 5 on B); the connected outer terminal retains RAW.
+Reversed defaults place the model on B. These checks use default dimensions.

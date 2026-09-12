@@ -365,6 +365,53 @@
       ],
       "limits": "KS-33 only; KS-27 equivalence, socket model, arbitrary rotations and other board thicknesses remain unverified.",
       "evidence": "model-source-candidates/gildev-gdek-629946873bc5 in integration workspace"
+    },
+    "infused-kim/switch_reset": {
+      "cases": 8,
+      "sides": [
+        "F",
+        "B"
+      ],
+      "rotations": [
+        0,
+        90
+      ],
+      "reverse": [
+        false,
+        true
+      ],
+      "terminalCount": 4,
+      "maximumSolderGapMm": 0.1,
+      "checks": [
+        "Each physical terminal fits one actual KiCad-exported copper pad",
+        "Pad 1 retains GND and pad 2 retains RST on all populated sides"
+      ],
+      "command": "QA_KEEP_MODELS=1 node scripts/qa/model-contacts.cjs evq7_infused (from ergogen-gui)",
+      "limits": "Default dimensions and model transforms; reversed default model uses B side."
+    },
+    "infused-kim/switch_power": {
+      "cases": 8,
+      "sides": [
+        "F",
+        "B"
+      ],
+      "rotations": [
+        0,
+        90
+      ],
+      "reverse": [
+        false,
+        true
+      ],
+      "terminalCount": 3,
+      "maximumSolderGapMm": 0.1,
+      "checks": [
+        "Each physical terminal fits one actual KiCad-exported copper pad",
+        "Middle physical terminal matches common pad 2 on F or 5 on B and BAT_P",
+        "Connected outer pad retains RAW; remaining outer pad stays unconnected"
+      ],
+      "command": "QA_KEEP_MODELS=1 node scripts/qa/model-contacts.cjs power_infused (from ergogen-gui)",
+      "limits": "Default dimensions and model transforms; reversed default model uses B side."
     }
   },
   "remaining": [
