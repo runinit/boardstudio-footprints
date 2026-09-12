@@ -122,3 +122,18 @@ The PTS636 THT reset footprint follows the manufacturer's 6.4 mm hole pitch
 and 1.2 mm drills. Pads are 1.9 mm to retain the previous 0.35 mm annular ring.
 This changes PCB geometry from upstream's 6.5 mm pitch and 1.0 mm drills;
 pad numbers and nets remain unchanged. A matching 3D default is still pending.
+
+### Supermini NRF52840
+
+The Tsuki model (MIT, pinned in `manifest/tsuki.json`) is assigned by default.
+The assembly assumes a 5 mm socket gap and 1.6 mm module PCB. Reversible
+footprints mount the module on the back; explicit model transforms override
+these defaults. `pcb_thickness` defaults to 1.6 mm and controls the front-layer
+model offset for that back-mounted assembly.
+
+Forty KiCad-exported cases verify main-hole alignment, chip/USB orientation,
+and direct/jumper net paths across both footprint layers, 0/90 degree rotation,
+normal/reverse mounting and jumper variants. Optional model holes differ by
+0.06225 mm from the footprint. Nominal 0.64 mm square pins fit both 1 mm hole
+sets with one 0.03112 mm header translation, leaving 0.01712 mm clearance.
+This is a nominal geometry check, not manufactured-tolerance or socket proof.

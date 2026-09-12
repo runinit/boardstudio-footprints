@@ -25,8 +25,8 @@ const ceoloide = (await readdir(root, { withFileTypes: true }))
 const infused = await files(join(root, "vendor/infused-kim"), ".js");
 const models = (
   await Promise.all(
-    ["infused-kim", "kiswitch", "keebio", "foostan", "kicad"].map((name) =>
-      tree(join(root, `vendor/${name}/3d_models`)),
+    ["infused-kim", "kiswitch", "keebio", "foostan", "kicad", "tsuki"].map(
+      (name) => tree(join(root, `vendor/${name}/3d_models`)),
     ),
   )
 )
@@ -35,6 +35,11 @@ const models = (
 const manifest = {
   schema: 1,
   sources: {
+    tsuki: {
+      url: "https://github.com/42willow/tsuki",
+      commit: "6ec3f66f3d0cb087d3a061690aaaaf412537c12d",
+      license: "vendor/tsuki/LICENSE",
+    },
     kicad: {
       url: "https://gitlab.com/kicad/libraries/kicad-packages3D",
       commit: "e62ed1fc7862da83f789bd562671b5e4b82afcdf",

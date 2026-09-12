@@ -116,5 +116,10 @@
     "battery_connector_3dmodel_filename": "${KIPRJMOD}/models/boardstudio/kicad/JST_PH_S2B-PH-K_1x02_P2.00mm_Horizontal.step",
     "battery_connector_3dmodel_xyz_offset": "",
     "battery_connector_3dmodel_xyz_rotation": ""
+  },
+  "ceoloide/mcu_supermini_nrf52840": {
+    "mcu_3dmodel_filename": "${KIPRJMOD}/models/boardstudio/tsuki/nrf52840.step",
+    "mcu_3dmodel_xyz_offset": "",
+    "mcu_3dmodel_xyz_rotation": ""
   }
 }

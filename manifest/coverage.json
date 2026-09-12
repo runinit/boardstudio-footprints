@@ -1,9 +1,8 @@
 {
   "total": 39,
   "physical": 26,
-  "bound": 22,
+  "bound": 23,
   "missing": [
-    "ceoloide/mcu_supermini_nrf52840",
     "ceoloide/reset_switch_tht_top",
     "ceoloide/rotary_encoder_ec11_ec12",
     "ceoloide/switch_gateron_ks27_ks33"
@@ -54,7 +53,7 @@
     {
       "name": "ceoloide/mcu_supermini_nrf52840",
       "kind": "physical",
-      "defaultBound": false,
+      "defaultBound": true,
       "alignment": "unverified"
     },
     {

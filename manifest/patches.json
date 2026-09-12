@@ -71,5 +71,11 @@
     "upstreamSha256": "aeeea12c6ac89b7de5a7e4d73089aaf7aa752a924be50f201ce90675de4d9eb9",
     "reason": "Match PTS636 THT manufacturer land pattern: 6.4 mm pitch, 1.2 mm holes; preserve 0.35 mm annular rings and net assignment.",
     "datasheet": "https://www.ckswitches.com/media/2779/pts636.pdf"
+  },
+  {
+    "path": "mcu_supermini_nrf52840.js",
+    "upstreamUrl": "https://raw.githubusercontent.com/ceoloide/ergogen-footprints/48935f54b456ff1503d78d6b17d9d146b54e8ade/mcu_supermini_nrf52840.js",
+    "upstreamSha256": "2ec5d1021a640179f5a6e098b8813f56937c2e4d26465d84ad20ec8ff2f50315",
+    "reason": "Align the Tsuki Supermini model with single-side and reversible pin order, preserving explicit transforms and copper."
   }
 ]

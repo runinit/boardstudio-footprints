@@ -1,6 +1,11 @@
 {
   "schema": 1,
   "sources": {
+    "tsuki": {
+      "url": "https://github.com/42willow/tsuki",
+      "commit": "6ec3f66f3d0cb087d3a061690aaaaf412537c12d",
+      "license": "vendor/tsuki/LICENSE"
+    },
     "kicad": {
       "url": "https://gitlab.com/kicad/libraries/kicad-packages3D",
       "commit": "e62ed1fc7862da83f789bd562671b5e4b82afcdf",
@@ -41,7 +46,7 @@
       "display_ssd1306.js": "352518cd915c6308e86901debce4bef024226073dd9fe32e1b2607cc1ee3c99d",
       "led_sk6812mini-e.js": "406aacad994864b65dbe4b05cff02b1639f189bb8462f40cc579b5d216ea6ba6",
       "mcu_nice_nano.js": "d88297a2c53f015d57160af31ca5b823ab0912af50cd53e64df86e7c01f7f5e0",
-      "mcu_supermini_nrf52840.js": "2ec5d1021a640179f5a6e098b8813f56937c2e4d26465d84ad20ec8ff2f50315",
+      "mcu_supermini_nrf52840.js": "4b2a2ff959669ea7e75d533db8b7e3d293fe586893c330888381286a2d8a50e6",
       "mounting_hole_npth.js": "73d1dbff6ac90d29c819749c10942e634d89d66e5c8c8f3801b65a818159085d",
       "mounting_hole_plated.js": "775c2eada3c8003f50737ad37b4c227c07c8bc618438c58c5bd386cd1983818e",
       "power_switch_smd_side.js": "4271a1e95ff82bfa490dcee4050927c81e0c5a517d1c24150bb07efde84f81fb",
@@ -124,7 +129,8 @@
     "vendor/foostan/3d_models/OLED-Module-with-Pins.step": "42d7eb2588578a42bfc08d91a8f27e28db37b9c76ff62395bb9bb67a934b23b3",
     "vendor/kicad/3d_models/JST_PH_S2B-PH-K_1x02_P2.00mm_Horizontal.step": "5343f72b9fe095ba999c44c2d42c2045032162dd11066bd4d36865caf3d1fba2",
     "vendor/kicad/3d_models/Panasonic_EVQPUJ_EVQPUA.step": "88502ca94b12719aef367ebf68ba17d37f02468b0763d5997e70d2b705b609c8",
-    "vendor/kicad/3d_models/Panasonic_EVQPUL_EVQPUC.step": "c30e15d8da5c3856f0a5b19ab62f22eef9b06d69161963e77cdf6c0b09a7ac8c"
+    "vendor/kicad/3d_models/Panasonic_EVQPUL_EVQPUC.step": "c30e15d8da5c3856f0a5b19ab62f22eef9b06d69161963e77cdf6c0b09a7ac8c",
+    "vendor/tsuki/3d_models/nrf52840.step": "c841576b727e83402939f7efa75149a68e9a9bd1f71e0315ca37b3bbc1a084b5"
   },
   "mappings": {
     "candidates": {
