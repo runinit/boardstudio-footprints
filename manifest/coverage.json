@@ -1,10 +1,9 @@
 {
   "total": 39,
   "physical": 26,
-  "bound": 16,
+  "bound": 17,
   "missing": [
     "ceoloide/battery_connector_jst_ph_2",
-    "ceoloide/battery_connector_molex_pico_ezmate_1x02",
     "ceoloide/display_ssd1306",
     "ceoloide/led_sk6812mini-e",
     "ceoloide/mcu_supermini_nrf52840",
@@ -24,7 +23,7 @@
     {
       "name": "ceoloide/battery_connector_molex_pico_ezmate_1x02",
       "kind": "physical",
-      "defaultBound": false,
+      "defaultBound": true,
       "alignment": "unverified"
     },
     {

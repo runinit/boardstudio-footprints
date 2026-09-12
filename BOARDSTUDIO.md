@@ -20,7 +20,7 @@ Its `3d_models/` and `3d_model_src/` directories are retained verbatim.
 At the pins above this seed contains 24 ceoloide JavaScript footprint files,
 15 infused-kim JavaScript footprint files, 33 infused-kim STEP models,
 4 KiSwitch STP models and 4 corresponding STL previews.
-Default filename adapters cover 16 of 26 physical footprints; nine drawing
+Default filename adapters cover 17 of 26 physical footprints; nine drawing
 utilities and four PCB-only entries need no component model.
 `manifest/coverage.json` records every entry. Other physical footprints and
 geometric alignment still require work; this repository does not
@@ -63,3 +63,9 @@ records actual KiCad STEP export checks for terminal-to-copper placement on F/B
 at 0/90 degrees, plus diode cathode orientation. The ceoloide Panasonic reset
 switch is a different package from Infused-Kim's bundled reset model and remains
 unmapped pending a matching asset.
+
+Ceoloide's two-pin Pico-EZmate connector now accepts socket/cable filenames and
+scale, rotation and offset parameters. Default models follow its selected side;
+KiCad exports verify both socket contacts intersect their copper pads on F/B at
+0/90 degrees. An empty filename disables that model. The source patch and its
+original hash are recorded in `manifest/patches.json`.

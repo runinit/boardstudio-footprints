@@ -10,5 +10,11 @@
     "upstreamUrl": "https://raw.githubusercontent.com/infused-kim/kb_ergogen_fp/bb80a207d8a6fa7b9245caad2c2d97e2adc2f612/smd_0805.js",
     "upstreamSha256": "89b5e194f217b1fb6d514f318f326b911d74ed47657b450dc8a022d19fd937c7",
     "reason": "Honor declared xyz transform overrides and preserve model-to-net positions when back-side mirroring is disabled; keep helper variables local."
+  },
+  {
+    "path": "battery_connector_molex_pico_ezmate_1x02.js",
+    "upstreamUrl": "https://raw.githubusercontent.com/ceoloide/ergogen-footprints/48935f54b456ff1503d78d6b17d9d146b54e8ade/battery_connector_molex_pico_ezmate_1x02.js",
+    "upstreamSha256": "301a01a1d9041c417eabe09d1cad7fafb2f390501bba175d904960a1bba11ed6",
+    "reason": "Add socket and cable model parameters with side-aware orientation; preserve original copper and nets."
   }
 ]

@@ -29,6 +29,19 @@
       "xy": "Each terminal solid lies within exactly one exported copper pad",
       "maximumSolderGapMm": 0.1,
       "polarity": "Cathode marking solid remains toward pad 1 (to net)"
+    },
+    "ceoloide/battery_connector_molex_pico_ezmate_1x02": {
+      "sides": [
+        "F",
+        "B"
+      ],
+      "rotations": [
+        0,
+        90
+      ],
+      "terminalCount": 2,
+      "geometry": "Both signal pads have a nonzero solid intersection with the socket contact geometry after KiCad STEP export",
+      "minimumIntersectionMm3": 1e-05
     }
   },
   "remaining": [

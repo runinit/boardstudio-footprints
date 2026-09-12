@@ -20,7 +20,7 @@
   "footprints": {
     "ceoloide": {
       "battery_connector_jst_ph_2.js": "fafe9a53df11fd99a820c9571e1bcbf5a8aedda98774e700642af5af5f00d853",
-      "battery_connector_molex_pico_ezmate_1x02.js": "301a01a1d9041c417eabe09d1cad7fafb2f390501bba175d904960a1bba11ed6",
+      "battery_connector_molex_pico_ezmate_1x02.js": "3442bee097028b456399f205de28f82889c9644f859117b70a5186338b9c6f2a",
       "diode_tht_sod123.js": "f57b20d50876d2235682f820d818d5c599bec4f4b7adf559f20631e1018dfa46",
       "display_nice_view.js": "bdb2080a9697fc9ddbc8ec41bd8e2b81bfbcea31f4e220cf39a0094a342a66c7",
       "display_ssd1306.js": "484fa0c1e8cc421e9f7100d1ff765f7646a59b9fe181415edcbf7be7c6db5065",
