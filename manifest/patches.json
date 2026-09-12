@@ -4,5 +4,11 @@
     "upstreamUrl": "https://raw.githubusercontent.com/infused-kim/kb_ergogen_fp/bb80a207d8a6fa7b9245caad2c2d97e2adc2f612/point_debugger.js",
     "upstreamSha256": "4230248e48162c4d7a133beb5573c27aa70e3933fceaa3925389daae5343e82f",
     "reason": "Remove stray quote after the reference designator to emit valid KiCad S-expressions."
+  },
+  {
+    "path": "vendor/infused-kim/smd_0805.js",
+    "upstreamUrl": "https://raw.githubusercontent.com/infused-kim/kb_ergogen_fp/bb80a207d8a6fa7b9245caad2c2d97e2adc2f612/smd_0805.js",
+    "upstreamSha256": "89b5e194f217b1fb6d514f318f326b911d74ed47657b450dc8a022d19fd937c7",
+    "reason": "Honor declared xyz transform overrides and preserve model-to-net positions when back-side mirroring is disabled; keep helper variables local."
   }
 ]

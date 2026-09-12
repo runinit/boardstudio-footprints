@@ -120,11 +120,11 @@ module.exports = {
         };
 
         const gen_3d_model_for_net = (net_idx, pos_x) => {
-            prop_base =         `component_${net_idx + 1}`;
-            prop_filename =     `${prop_base}_3dmodel_filename`;
-            prop_scale =        `${prop_base}_3dmodel_scale`;
-            prop_rotation =     `${prop_base}_3dmodel_rotation`;
-            prop_offset =       `${prop_base}_3dmodel_offset`;
+            const prop_base =         `component_${net_idx + 1}`;
+            const prop_filename =     `${prop_base}_3dmodel_filename`;
+            const prop_scale =        `${prop_base}_3dmodel_xyz_scale`;
+            const prop_rotation =     `${prop_base}_3dmodel_xyz_rotation`;
+            const prop_offset =       `${prop_base}_3dmodel_xyz_offset`;
 
             if(!p[prop_filename]) {
                 return '';
@@ -141,7 +141,7 @@ module.exports = {
                   offset_f:   [pos_x, 0, 0],
 
                   rotation_b: [0, 180, 0],
-                  offset_b:   [-pos_x, 0, -1.6],
+                  offset_b:   [p.mirror ? -pos_x : pos_x, 0, -1.6],
                 },
             )
 

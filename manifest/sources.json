@@ -55,7 +55,7 @@
       "vendor/infused-kim/nice_view.js": "de3f90028fd5e11e5c3879b9759877f5c1a4a987e9d2da273602e65f9cf97b99",
       "vendor/infused-kim/pads.js": "3953d2102230825d765ae1567c8085264b83f2b8de085ea21cfb0bcb064b1234",
       "vendor/infused-kim/point_debugger.js": "2d26f255d73a57260757e15273512c05541b8dc50a9685ac05842fa696e2d1bd",
-      "vendor/infused-kim/smd_0805.js": "89b5e194f217b1fb6d514f318f326b911d74ed47657b450dc8a022d19fd937c7",
+      "vendor/infused-kim/smd_0805.js": "294352f47c89337eb118e6db5999cfca084c5ac3da5fd99a6f0dcb76324f7dad",
       "vendor/infused-kim/switch_power.js": "b36b6900beb92a64b5e6f2d9b363c68e16ac48e27672d1a819e81d642ab83ffe",
       "vendor/infused-kim/switch_reset.js": "39c98cb0efd72f4030de77299d03665f7a0a4a91a7ec15946bbb2a995957565c",
       "vendor/infused-kim/text.js": "ae3fcc7dacd95ae4ea2ab6cc7afe76ce8619e16b2e08a97321d29e5b094b3074",
@@ -136,17 +136,21 @@
     },
     "unverifiedAlignment": true,
     "nonphysical": [
-      "utility_ergogen_logo",
-      "utility_filled_zone",
-      "utility_keepout_zone",
-      "utility_point_debugger",
-      "utility_router",
-      "utility_text",
-      "point_debugger",
-      "text"
+      "ceoloide/utility_ergogen_logo",
+      "ceoloide/utility_filled_zone",
+      "ceoloide/utility_keepout_zone",
+      "ceoloide/utility_point_debugger",
+      "ceoloide/utility_router",
+      "ceoloide/utility_text",
+      "infused-kim/point_debugger",
+      "infused-kim/text",
+      "infused-kim/icon_bat"
     ],
     "pcbOnly": [
-      "pads"
+      "infused-kim/pads",
+      "infused-kim/mounting_hole",
+      "ceoloide/mounting_hole_npth",
+      "ceoloide/mounting_hole_plated"
     ]
   }
 }

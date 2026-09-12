@@ -82,16 +82,22 @@ const manifest = {
     },
     unverifiedAlignment: true,
     nonphysical: [
-      "utility_ergogen_logo",
-      "utility_filled_zone",
-      "utility_keepout_zone",
-      "utility_point_debugger",
-      "utility_router",
-      "utility_text",
-      "point_debugger",
-      "text",
+      "ceoloide/utility_ergogen_logo",
+      "ceoloide/utility_filled_zone",
+      "ceoloide/utility_keepout_zone",
+      "ceoloide/utility_point_debugger",
+      "ceoloide/utility_router",
+      "ceoloide/utility_text",
+      "infused-kim/point_debugger",
+      "infused-kim/text",
+      "infused-kim/icon_bat",
     ],
-    pcbOnly: ["pads"],
+    pcbOnly: [
+      "infused-kim/pads",
+      "infused-kim/mounting_hole",
+      "ceoloide/mounting_hole_npth",
+      "ceoloide/mounting_hole_plated",
+    ],
   },
 };
 for (const path of ceoloide)
@@ -102,7 +108,7 @@ for (const path of models)
   manifest.models[relative(root, path)] = await sha(path);
 await mkdir(join(root, "manifest"), { recursive: true });
 await writeFile(
-  join(root, "manifest/sources.json"),
+  process.argv[2] || join(root, "manifest/sources.json"),
   `${JSON.stringify(manifest, null, 2)}\n`,
 );
 console.log(

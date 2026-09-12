@@ -1,6 +1,6 @@
 # BoardStudio footprints
 
-This directory is the local BoardStudio fork seed for modular Ergogen
+This directory is the BoardStudio source fork for modular Ergogen
 footprints. It retains the complete ceoloide Git history so future changes can
 be rebased or compared without losing provenance.
 
@@ -20,7 +20,9 @@ Its `3d_models/` and `3d_model_src/` directories are retained verbatim.
 At the pins above this seed contains 24 ceoloide JavaScript footprint files,
 15 infused-kim JavaScript footprint files, 33 infused-kim STEP models,
 4 KiSwitch STP models and 4 corresponding STL previews.
-Default filename adapters cover 13 footprints. Other physical footprints and
+Default filename adapters cover 14 of 26 physical footprints; nine drawing
+utilities and four PCB-only entries need no component model.
+`manifest/coverage.json` records every entry. Other physical footprints and
 geometric alignment still require work; this repository does not
 claim that every footprint has a model.
 
@@ -39,10 +41,18 @@ The application stages the transformed modules and model assets, preserving the
 upstream source files. `manifest/default-models.json` owns parameter mappings.
 
 The KiSwitch sources and checksums are recorded in `manifest/kiswitch.json`.
-`manifest/patches.json` records the point-debugger syntax correction applied to
-the vendored Infused-Kim source. Other source files retain upstream bytes.
+`manifest/patches.json` records the point-debugger syntax correction and 0805
+transform-parameter/back-side placement corrections applied to the vendored
+Infused-Kim source. Other source files retain upstream bytes.
 
 Run `npm test` to validate the inventory. GUI integration tests additionally
 generate each mapped footprint and compare its non-model KiCad syntax with the
 upstream output. These tests establish source and transform integrity, not
 physical pin alignment or fabrication readiness.
+
+The generic 0805 array defaults to the bundled resistor model for all six
+available positions. Set `component_N_3dmodel_filename` to the bundled capacitor
+path for a capacitor; empty strings disable individual models. Both models use
+1.25 x 2 mm bodies with terminals along Y. Tests cover one, two and six positions,
+front/back placement, mirroring and transform overrides. Board thickness remains
+the upstream 1.6 mm assumption for back-side models.
