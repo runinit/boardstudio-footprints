@@ -192,6 +192,31 @@
           "Socket terminal solids are absent"
         ],
         "command": "BOARDSTUDIO_FOOTPRINTS=../boardstudio-footprints node scripts/qa/model-contacts.cjs choc_solder_ceoloide"
+      },
+      "chocV2": {
+        "cases": 24,
+        "mounting": [
+          "solder",
+          "hotswap",
+          "combined"
+        ],
+        "sides": [
+          "F",
+          "B"
+        ],
+        "rotations": [
+          0,
+          90
+        ],
+        "reversible": [
+          false,
+          true
+        ],
+        "drilledSections": 120,
+        "socketToNetPaths": 32,
+        "maximumSolderGapMm": 0.1,
+        "pcbThicknessMm": 1.6,
+        "limits": "Default round stabilizer and pad placement only; no MBK keycap assigned."
       }
     },
     "ceoloide/switch_mx": {

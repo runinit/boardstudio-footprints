@@ -702,14 +702,16 @@ module.exports = {
       final += keycap_marks
     }
     if (p.include_stabilizer_pad && p.choc_v2_support) {
-      if (p.reversible || p.side == "F") {
+      // Combined mounting needs both stabilizer positions, even on one side.
+      const both_stabilizers = p.reversible || (p.hotswap && p.solder);
+      if (both_stabilizers || p.side == "F") {
         if (p.oval_stabilizer_pad) {
           final += oval_corner_stab_front
         } else {
           final += round_corner_stab_front
         }
       }
-      if (p.reversible || p.side == "B") {
+      if (both_stabilizers || p.side == "B") {
         if (p.oval_stabilizer_pad) {
           final += oval_corner_stab_back
         } else {

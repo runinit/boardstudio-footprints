@@ -57,7 +57,7 @@
     "path": "switch_choc_v1_v2.js",
     "upstreamUrl": "https://raw.githubusercontent.com/ceoloide/ergogen-footprints/48935f54b456ff1503d78d6b17d9d146b54e8ade/switch_choc_v1_v2.js",
     "upstreamSha256": "26b32559b9724dc6106190aedcd710e19a304e6bb16036708f41d2d4369c36c9",
-    "reason": "Place switch and cap opposite socket side using PCB thickness and cap seating height; preserve explicit model transforms."
+    "reason": "Place switch and cap opposite socket side using PCB thickness and cap seating height; preserve explicit model transforms. Include both Choc V2 stabilizer holes for combined solder and hotswap mounting."
   },
   {
     "path": "switch_mx.js",

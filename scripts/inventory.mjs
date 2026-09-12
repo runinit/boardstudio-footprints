@@ -25,7 +25,7 @@ const ceoloide = (await readdir(root, { withFileTypes: true }))
 const infused = await files(join(root, "vendor/infused-kim"), ".js");
 const models = (
   await Promise.all(
-    ["infused-kim", "kiswitch", "keebio", "foostan", "kicad", "tsuki", "gdek"].map(
+    ["infused-kim", "kiswitch", "keebio", "foostan", "kicad", "tsuki", "gdek", "koktoh"].map(
       (name) => tree(join(root, `vendor/${name}/3d_models`)),
     ),
   )
@@ -35,6 +35,7 @@ const models = (
 const manifest = {
   schema: 1,
   sources: {
+    koktoh: {url: "https://github.com/koktoh/keyswitch_model", commit: "2b6bcfac0032f1547e27b18b9a897e065e544b37", license: "vendor/koktoh/LICENSE"},
     gdek: {"url": "https://github.com/GilDev/GDEK", "commit": "629946873bc59c02567fb481bec7ae97d9bc59f8", "license": "vendor/gdek/LICENSE"},
     tsuki: {
       url: "https://github.com/42willow/tsuki",

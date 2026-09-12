@@ -60,7 +60,7 @@ const actualInfused = (await tree(join(root, "vendor/infused-kim")))
   .map((path) => path.slice(root.length + 1));
 const actualModels = (
   await Promise.all(
-    ["infused-kim", "kiswitch", "keebio", "foostan", "kicad", "tsuki", "gdek"].map(
+    ["infused-kim", "kiswitch", "keebio", "foostan", "kicad", "tsuki", "gdek", "koktoh"].map(
       (name) => tree(join(root, `vendor/${name}/3d_models`)),
     ),
   )

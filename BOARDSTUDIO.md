@@ -18,7 +18,7 @@ Its `3d_models/` and `3d_model_src/` directories are retained verbatim.
 ## Coverage snapshot
 
 The fork contains 24 ceoloide and 15 infused-kim footprint modules, with
-52 model assets: 48 STEP/STP sources and four STL companions. These include
+54 model assets: 49 STEP/STP sources, four STL companions and one WRL. These include
 33 infused-kim, eight KiSwitch, six KiCad, two Keebio, and one each from
 Foostan, Tsuki and GDEK.
 
@@ -39,7 +39,7 @@ do not apply the root MIT license to infused-kim-derived files.
 
 `src/defaultModels.mjs` exposes `bindDefaults(source, name)`. It returns a
 self-contained Ergogen module with model filename defaults; explicit generator
-parameters retain precedence. Choc V1 assets are suppressed for V2-only footprints.
+parameters retain precedence. V2-only Choc footprints select the koktoh Choc V2 switch and retain the Choc socket; the incompatible MBK keycap is suppressed.
 The application stages the transformed modules and model assets, preserving the
 upstream source files. `manifest/default-models.json` owns parameter mappings.
 
@@ -111,8 +111,8 @@ a 6.6 mm keycap seating offset; match `pcb_thickness` to the board when
 changing board thickness. 32 exported cases verify switch pins and socket contacts on F/B at 0/90
 degrees, including single/reversible, alternate pad placement and plated holes.
 Eight additional solder-only cases verify both pin sections fit their drills,
-retain input/output nets and omit socket solids. Choc V2 and non-default board
-thickness remain unverified. Explicit model transforms remain authoritative.
+retain input/output nets and omit socket solids. Non-default board
+thickness remains unverified. Explicit model transforms remain authoritative.
 
 The ceoloide MX hotswap default places the switch opposite the socket side,
 correcting the downloaded housing and socket datums. Match `pcb_thickness`
@@ -204,3 +204,20 @@ for the documented 3.5 mm drill option is not currently bundled.
 Infused-kim Choc omits the socket model when `hotswap: false`. Solder-only
 exports retain switch and keycap models; four F/B and 0/90-degree reversible
 checks confirm both solder pins fit their holes and reach distinct nets.
+
+### Choc V2
+
+V2-only configurations use koktoh's Choc V2 Red STEP model. Its matching
+WRL is also bundled. Both retain upstream CC BY-NC-SA 4.0 licensing;
+`manifest/koktoh.json` records the source revision and author precautions.
+
+Twenty-four KiCad exports cover solder, hotswap and combined mounting on
+F/B, single/reversible, at 0/90 degrees. All 120 pin/post sections fit their
+drills. Solder pins retain input/output nets. The 32 hotswap/combined paths
+connect each switch pin to one socket terminal and its corresponding copper
+net, allowing a 0.1 mm solder gap. Combined mounting includes both stabilizer
+positions, including single-sided footprints.
+
+The automatic model requires round stabilizer holes and a center drill of
+at least 4.8 mm. Custom models and transforms remain authoritative. Alternate
+pad placement, oval stabilizers and other board thicknesses are unverified.
