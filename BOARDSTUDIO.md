@@ -147,3 +147,9 @@ The default display/header elevation is therefore 3.5 mm higher than the
 original 5 mm socket assembly. Check enclosure clearance when adopting it.
 Explicit display, header and socket transforms remain available for other
 hardware. The footprint's copper, drill sizes and nets are unchanged.
+
+The infused-kim nice!view default uses the same 8.5 mm socket and matching
+display/header elevations. Its `display_3dmodel_side` override is preserved,
+including reversible back mounting. Unlike ceoloide, this upstream footprint
+provides jumper pads without connecting tracks: route sockets to their local
+jumper pads before fabrication. The model correction does not add copper.

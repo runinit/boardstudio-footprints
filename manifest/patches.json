@@ -83,5 +83,11 @@
     "upstreamSha256": "bdb2080a9697fc9ddbc8ec41bd8e2b81bfbcea31f4e220cf39a0094a342a66c7",
     "upstreamUrl": "https://raw.githubusercontent.com/ceoloide/ergogen-footprints/48935f54b456ff1503d78d6b17d9d146b54e8ade/display_nice_view.js",
     "reason": "Align the display, header and socket model origins with their shared five-pin row; preserve explicit transforms."
+  },
+  {
+    "path": "vendor/infused-kim/nice_view.js",
+    "upstreamSha256": "de3f90028fd5e11e5c3879b9759877f5c1a4a987e9d2da273602e65f9cf97b99",
+    "upstreamUrl": "https://raw.githubusercontent.com/infused-kim/kb_ergogen_fp/bb80a207d8a6fa7b9245caad2c2d97e2adc2f612/nice_view.js",
+    "reason": "Align display/header/socket models with standard8.5mm socket and preserve model-side and transform overrides."
   }
 ]

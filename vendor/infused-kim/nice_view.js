@@ -9,6 +9,7 @@ module.exports = {
     designator: 'DISP',
     side: 'F',
     reverse: false,
+    pcb_thickness: 1.6,
     MOSI: {type: 'net', value: 'MOSI'},
     SCK: {type: 'net', value: 'SCK'},
     VCC: {type: 'net', value: 'VCC'},
@@ -309,6 +310,10 @@ module.exports = {
       }
     }
 
+    // Match the standard 8.5 mm socket while retaining the model-side override.
+    const socket_height = 8.5;
+    const display_height = socket_height + 1.8;
+    const header_height = socket_height - 2;
     final += `
       ${ gen_3d_model(
             p.display_3dmodel_filename,
@@ -318,10 +323,10 @@ module.exports = {
             p.display_3dmodel_side,
             {
               rotation_f: [0, 0, 0],
-              offset_f: [-7, -18, 6.8],
+              offset_f: [-7, -18, display_height],
 
               rotation_b: [0, 180, 0],
-              offset_b: [7, -18, -8.4],
+              offset_b: [7, -18, -p.pcb_thickness - display_height],
             },
         )
       }
@@ -333,10 +338,10 @@ module.exports = {
             p.display_3dmodel_side,
             {
               rotation_f: [0, 0, -90],
-              offset_f: [0, -16.7, 3],
+              offset_f: [0.0124, -16.732, header_height],
 
-              rotation_b: [0, 0, -90],
-              offset_b: [0, -16.7, -9],
+              rotation_b: [180, 0, -90],
+              offset_b: [-0.0124, -16.732, -p.pcb_thickness - header_height],
             },
         )
       }
@@ -347,11 +352,11 @@ module.exports = {
             p.socket_3dmodel_xyz_offset,
             p.display_3dmodel_side,
             {
-              rotation_f: [-90, 0, 0],
-              offset_f: [-5.1, -16.7, 0],
+              rotation_f: [0, 0, -90],
+              offset_f: [-5.08, -16.7, 0],
 
-              rotation_b: [90, 0, 0],
-              offset_b: [-5.1, -16.7, -1.6],
+              rotation_b: [180, 0, -90],
+              offset_b: [5.08, -16.7, -p.pcb_thickness],
             },
         )
       }

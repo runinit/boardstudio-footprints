@@ -47,7 +47,7 @@
   "infused-kim/nice_view": {
     "display_3dmodel_filename": "${KIPRJMOD}/models/boardstudio/infused-kim/Nice_View.step",
     "header_3dmodel_filename": "${KIPRJMOD}/models/boardstudio/infused-kim/PinHeader_2.54mm_1x-5.step",
-    "socket_3dmodel_filename": "${KIPRJMOD}/models/boardstudio/infused-kim/PinSocket_2.54mm_5mm_1x-5.step"
+    "socket_3dmodel_filename": "${KIPRJMOD}/models/boardstudio/kicad/PinSocket_1x05_P2.54mm_Vertical.step"
   },
   "infused-kim/switch_power": {
     "switch_3dmodel_filename": "${KIPRJMOD}/models/boardstudio/infused-kim/Switch_Power.step"
