@@ -246,6 +246,29 @@
         "Default pin1 RAW and pin2 GND mapping preserved"
       ],
       "limits": "Nominal placement and net mapping only; explicit independent model-side overrides and actual cable polarity are not verified."
+    },
+    "infused-kim/diode": {
+      "model": "Diode_1N4148W.step",
+      "modelSides": [
+        "F",
+        "B"
+      ],
+      "rotations": [
+        0,
+        90
+      ],
+      "include_tht": [
+        false,
+        true
+      ],
+      "cases": 8,
+      "checks": [
+        "Both terminals fit selected-side SMD pads within0.1mm solder gap",
+        "Cathode stripe remains at pad1",
+        "All SMD and optional THT pads preserve pin1 to/cathode and pin2 from/anode"
+      ],
+      "limits": "Validates the default SMD model with optional THT pads; does not validate an alternative through-hole diode model.",
+      "command": "BOARDSTUDIO_FOOTPRINTS=../boardstudio-footprints node scripts/qa/model-contacts.cjs diode_infused"
     }
   },
   "remaining": [
