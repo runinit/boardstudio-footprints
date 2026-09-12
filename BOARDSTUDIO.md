@@ -174,3 +174,16 @@ ceoloide assigns pin 1 to BAT_N and pin 2 to BAT_P; infused-kim assigns pin 1
 to RAW and pin 2 to GND. The model bindings preserve those definitions.
 Choose or override nets to match the intended cable pinout; swapping library
 entries does not preserve default polarity.
+
+### Gateron KS-33 default
+
+The KS-27/KS-33 footprint defaults to the KS-33 Low Profile 2.0 switch
+from GilDev/GDEK, retained unchanged under that repository's CERN-OHL-S-2.0
+license. Source commit and hashes are in `manifest/gdek.json`. This default
+represents KS-33; it does not establish KS-27 body or travel equivalence.
+Hotswap mounts the switch opposite the footprint side; solder-only mounts
+it on the footprint side. Automatic transforms use the model's four planar
+feet and `pcb_thickness` (default 1.6 mm). Explicit XYZ overrides win.
+Sixteen native/KiCad candidate exports verified both mounting modes, sides,
+0/90-degree rotations, and reversible variants against actual drill holes
+and input/output nets. The socket model is not supplied by this asset.

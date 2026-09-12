@@ -123,8 +123,9 @@ module.exports = {
     outer_pad_width_front: 2.6,
     outer_pad_width_back: 2.6,
     switch_3dmodel_filename: '',
-    switch_3dmodel_xyz_offset: [0, 0, 0],
-    switch_3dmodel_xyz_rotation: [0, 0, 0],
+    pcb_thickness: 1.6,
+    switch_3dmodel_xyz_offset: '',
+    switch_3dmodel_xyz_rotation: '',
     switch_3dmodel_xyz_scale: [1, 1, 1],
     hotswap_3dmodel_filename: '',
     hotswap_3dmodel_xyz_offset: [0, 0, 0],
@@ -424,11 +425,23 @@ module.exports = {
       ${p.to.str})
     `
 
+    // KS-33 feet define the mounting plane; hotswap mounts opposite the footprint.
+    const model_center_x = 60;
+    const model_mount_z = 3.25;
+    const model_back = p.side === 'B';
+    const model_rotation = p.switch_3dmodel_xyz_rotation || (p.hotswap
+      ? (model_back ? [180, 0, 0] : [0, 180, 0])
+      : (model_back ? [0, 0, 180] : [0, 0, 0]));
+    const model_offset = p.switch_3dmodel_xyz_offset || [
+      model_back === p.hotswap ? -model_center_x : model_center_x,
+      0,
+      p.hotswap ? model_mount_z - p.pcb_thickness : -model_mount_z,
+    ];
     const switch_3dmodel = `
     (model ${p.switch_3dmodel_filename}
-      (offset (xyz ${p.switch_3dmodel_xyz_offset[0]} ${p.switch_3dmodel_xyz_offset[1]} ${p.switch_3dmodel_xyz_offset[2]}))
+      (offset (xyz ${model_offset[0]} ${model_offset[1]} ${model_offset[2]}))
       (scale (xyz ${p.switch_3dmodel_xyz_scale[0]} ${p.switch_3dmodel_xyz_scale[1]} ${p.switch_3dmodel_xyz_scale[2]}))
-      (rotate (xyz ${p.switch_3dmodel_xyz_rotation[0]} ${p.switch_3dmodel_xyz_rotation[1]} ${p.switch_3dmodel_xyz_rotation[2]}))
+      (rotate (xyz ${model_rotation[0]} ${model_rotation[1]} ${model_rotation[2]}))
     )
     `
 

@@ -1,6 +1,11 @@
 {
   "schema": 1,
   "sources": {
+    "gdek": {
+      "url": "https://github.com/GilDev/GDEK",
+      "commit": "629946873bc59c02567fb481bec7ae97d9bc59f8",
+      "license": "vendor/gdek/LICENSE"
+    },
     "tsuki": {
       "url": "https://github.com/42willow/tsuki",
       "commit": "6ec3f66f3d0cb087d3a061690aaaaf412537c12d",
@@ -54,7 +59,7 @@
       "reset_switch_tht_top.js": "ef42fd8dc6a45b805d05383f73ecc15b0910548e11f4e1661bdf715358f72f68",
       "rotary_encoder_ec11_ec12.js": "2e4ecbd9db3f15a7dee45ed6bdc337bb3d1fad4aff8b038b1107daa772312559",
       "switch_choc_v1_v2.js": "d0c5e93ad429baa3d648e35b8ea6980e887c8f844d7e596dfe38d5bc329bc1de",
-      "switch_gateron_ks27_ks33.js": "7292062fd420cd727d52b13fe0c1a8a5279fc046fb4bedbc926d54d0637e9d3e",
+      "switch_gateron_ks27_ks33.js": "a0deb93e5328b8af592979b762fb2f4099c11e7a4bf4937aeb1615735ee7c35c",
       "switch_mx.js": "c13255b22fffbfc50a0e8eb4039816a2b9afdcc17694d8857f1e8032bb5efa83",
       "trrs_pj320a.js": "b0ae0330b8413e0cb38f38f8795c5822b9adb444857176ab2746992f46caaa08",
       "utility_ergogen_logo.js": "eaa818115cc5816c628360cb17a42c68047c0df10062c6c37786e7b988f732cf",
@@ -133,7 +138,8 @@
     "vendor/kicad/3d_models/PinSocket_1x05_P2.54mm_Vertical.step": "c65e07a9f21343c3a79efcdc9c439aab14cb7f68bb491c08d95d1fdc007b20e1",
     "vendor/kicad/3d_models/PinSocket_1x12_P2.54mm_Vertical.step": "34b8ead6104d7dfde9212917fbd6f7c9e04e4ad5a64ad45e391f99451a4aaad4",
     "vendor/kicad/3d_models/PinSocket_2x12_W15.24mm_Vertical.step": "1d0ad0687f3fd0cbb745c8f51c709080ebb8a4a69f4221cec473669b4654137c",
-    "vendor/tsuki/3d_models/nrf52840.step": "c841576b727e83402939f7efa75149a68e9a9bd1f71e0315ca37b3bbc1a084b5"
+    "vendor/tsuki/3d_models/nrf52840.step": "c841576b727e83402939f7efa75149a68e9a9bd1f71e0315ca37b3bbc1a084b5",
+    "vendor/gdek/3d_models/KS33.stp": "e721521543b7d473ca94ea4f72c0cd729670993e7370bc6d66ff6a953b239267"
   },
   "mappings": {
     "candidates": {

@@ -127,5 +127,10 @@
     "mcu_3dmodel_filename": "${KIPRJMOD}/models/boardstudio/tsuki/nrf52840.step",
     "mcu_3dmodel_xyz_offset": "",
     "mcu_3dmodel_xyz_rotation": ""
+  },
+  "ceoloide/switch_gateron_ks27_ks33": {
+    "switch_3dmodel_filename": "${KIPRJMOD}/models/boardstudio/gdek/KS33.stp",
+    "switch_3dmodel_xyz_offset": "",
+    "switch_3dmodel_xyz_rotation": ""
   }
 }
