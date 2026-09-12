@@ -1,0 +1,40 @@
+{
+  "scope": "Partial physical alignment checks; not full library or variant coverage",
+  "method": "Generate native PCB through GUI engine, export STEP including pads using kicad-cli, compare FreeCAD solid geometry",
+  "command": "BOARDSTUDIO_FOOTPRINTS=../boardstudio-footprints node scripts/qa/model-contacts.cjs (from ergogen-gui)",
+  "checks": {
+    "ceoloide/power_switch_smd_side": {
+      "sides": [
+        "F",
+        "B"
+      ],
+      "rotations": [
+        0,
+        90
+      ],
+      "terminalCount": 3,
+      "xy": "Each terminal solid lies within exactly one exported copper pad",
+      "maximumSolderGapMm": 0.1
+    },
+    "ceoloide/diode_tht_sod123": {
+      "sides": [
+        "F",
+        "B"
+      ],
+      "rotations": [
+        0,
+        90
+      ],
+      "terminalCount": 2,
+      "xy": "Each terminal solid lies within exactly one exported copper pad",
+      "maximumSolderGapMm": 0.1,
+      "polarity": "Cathode marking solid remains toward pad 1 (to net)"
+    }
+  },
+  "remaining": [
+    "Reversible variants",
+    "Other board thicknesses",
+    "Arbitrary rotations",
+    "Visual whole-board inspection"
+  ]
+}

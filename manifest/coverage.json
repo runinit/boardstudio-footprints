@@ -1,15 +1,13 @@
 {
   "total": 39,
   "physical": 26,
-  "bound": 14,
+  "bound": 16,
   "missing": [
     "ceoloide/battery_connector_jst_ph_2",
     "ceoloide/battery_connector_molex_pico_ezmate_1x02",
-    "ceoloide/diode_tht_sod123",
     "ceoloide/display_ssd1306",
     "ceoloide/led_sk6812mini-e",
     "ceoloide/mcu_supermini_nrf52840",
-    "ceoloide/power_switch_smd_side",
     "ceoloide/reset_switch_smd_side",
     "ceoloide/reset_switch_tht_top",
     "ceoloide/rotary_encoder_ec11_ec12",
@@ -32,7 +30,7 @@
     {
       "name": "ceoloide/diode_tht_sod123",
       "kind": "physical",
-      "defaultBound": false,
+      "defaultBound": true,
       "alignment": "unverified"
     },
     {
@@ -80,7 +78,7 @@
     {
       "name": "ceoloide/power_switch_smd_side",
       "kind": "physical",
-      "defaultBound": false,
+      "defaultBound": true,
       "alignment": "unverified"
     },
     {

@@ -60,5 +60,26 @@
     "component_4_3dmodel_filename": "${KIPRJMOD}/models/boardstudio/infused-kim/SMD_0805_Resistor.step",
     "component_5_3dmodel_filename": "${KIPRJMOD}/models/boardstudio/infused-kim/SMD_0805_Resistor.step",
     "component_6_3dmodel_filename": "${KIPRJMOD}/models/boardstudio/infused-kim/SMD_0805_Resistor.step"
+  },
+  "ceoloide/power_switch_smd_side": {
+    "switch_3dmodel_filename": "${KIPRJMOD}/models/boardstudio/infused-kim/Switch_Power.step",
+    "switch_3dmodel_xyz_rotation": [
+      -90,
+      0,
+      -90
+    ]
+  },
+  "ceoloide/diode_tht_sod123": {
+    "diode_3dmodel_filename": "${KIPRJMOD}/models/boardstudio/infused-kim/Diode_1N4148W.step",
+    "diode_3dmodel_xyz_rotation": [
+      -90,
+      0,
+      0
+    ],
+    "diode_3dmodel_xyz_offset": [
+      0,
+      0,
+      0.7
+    ]
   }
 }

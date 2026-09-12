@@ -20,7 +20,7 @@ Its `3d_models/` and `3d_model_src/` directories are retained verbatim.
 At the pins above this seed contains 24 ceoloide JavaScript footprint files,
 15 infused-kim JavaScript footprint files, 33 infused-kim STEP models,
 4 KiSwitch STP models and 4 corresponding STL previews.
-Default filename adapters cover 14 of 26 physical footprints; nine drawing
+Default filename adapters cover 16 of 26 physical footprints; nine drawing
 utilities and four PCB-only entries need no component model.
 `manifest/coverage.json` records every entry. Other physical footprints and
 geometric alignment still require work; this repository does not
@@ -56,3 +56,10 @@ path for a capacitor; empty strings disable individual models. Both models use
 1.25 x 2 mm bodies with terminals along Y. Tests cover one, two and six positions,
 front/back placement, mirroring and transform overrides. Board thickness remains
 the upstream 1.6 mm assumption for back-side models.
+
+Ceoloide's SSSS811101 power switch and SOD-123 diode use the bundled Infused-Kim
+models with explicit rotations and diode height offset. `manifest/alignment.json`
+records actual KiCad STEP export checks for terminal-to-copper placement on F/B
+at 0/90 degrees, plus diode cathode orientation. The ceoloide Panasonic reset
+switch is a different package from Infused-Kim's bundled reset model and remains
+unmapped pending a matching asset.

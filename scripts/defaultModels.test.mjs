@@ -23,3 +23,7 @@ const after = createHash("sha256")
   .update(await readFile(source))
   .digest("hex");
 assert.equal(after, before);
+assert.deepEqual(
+  defaultModels("ceoloide/power_switch_smd_side").switch_3dmodel_xyz_rotation,
+  [-90, 0, -90],
+);
