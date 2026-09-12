@@ -46,5 +46,11 @@
     "upstreamUrl": "https://raw.githubusercontent.com/ceoloide/ergogen-footprints/48935f54b456ff1503d78d6b17d9d146b54e8ade/battery_connector_jst_ph_2.js",
     "upstreamSha256": "fafe9a53df11fd99a820c9571e1bcbf5a8aedda98774e700642af5af5f00d853",
     "reason": "Center the pin-1-origin JST model for the selected side while preserving explicit transforms and all copper/net geometry."
+  },
+  {
+    "path": "mcu_nice_nano.js",
+    "upstreamUrl": "https://raw.githubusercontent.com/ceoloide/ergogen-footprints/48935f54b456ff1503d78d6b17d9d146b54e8ade/mcu_nice_nano.js",
+    "upstreamSha256": "435250311fedf4da930053bfbdc761b1181de0062afb2c85ba80458ea156622a",
+    "reason": "Align bundled model hole datum and socket height for both sides and mounting orientations; retain explicit transforms."
   }
 ]

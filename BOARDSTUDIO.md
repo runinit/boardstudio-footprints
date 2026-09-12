@@ -96,3 +96,9 @@ The model includes unloaded bent pins: full-depth rigid containment is not a
 physical insertion test. The manufacturer's reference drill range is 0.7–0.8 mm,
 with a larger-hole advisory for hard PCBs; existing 0.75 mm drills are unchanged.
 See `manifest/kicad.json` for the datasheet and fit limitation.
+
+The ceoloide nice!nano default now follows `side` and `reverse_mount` and
+uses the bundled library's 5 mm socket spacing. Eight KiCad-exported checks
+verify 24 main hole centers, module clearance and MCU package orientation.
+Explicit XYZ transforms still override the default. Optional extra pins and
+physical socket/header solids are outside this check's scope.

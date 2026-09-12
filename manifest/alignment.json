@@ -125,6 +125,24 @@
       "xy": "Two straight entry shafts fit separate 0.75 mm holes; housing is centered on footprint",
       "limitation": "Unloaded retention bends are not rigid-fit gauges. Physical insertion and PCB drill process remain unverified.",
       "datasheet": "https://www.jst-mfg.com/product/pdf/eng/ePH.pdf"
+    },
+    "ceoloide/mcu_nice_nano": {
+      "sides": [
+        "F",
+        "B"
+      ],
+      "rotations": [
+        0,
+        90
+      ],
+      "reverseMount": [
+        false,
+        true
+      ],
+      "xy": "All 24 module holes coincide with PCB socket holes after correcting the model row datum",
+      "socketHeightMm": 5,
+      "orientation": "MCU package faces toward or away from PCB according to reverse_mount",
+      "limitation": "Socket/header solids and optional extra pins are not covered by these checks"
     }
   },
   "remaining": [

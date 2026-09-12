@@ -5,7 +5,9 @@
     "keycap_3dmodel_filename": "${KIPRJMOD}/models/boardstudio/infused-kim/Choc_V1_Keycap_MBK_Black_1u.step"
   },
   "ceoloide/mcu_nice_nano": {
-    "mcu_3dmodel_filename": "${KIPRJMOD}/models/boardstudio/infused-kim/Nice_Nano_V2.step"
+    "mcu_3dmodel_filename": "${KIPRJMOD}/models/boardstudio/infused-kim/Nice_Nano_V2.step",
+    "mcu_3dmodel_xyz_offset": "",
+    "mcu_3dmodel_xyz_rotation": ""
   },
   "ceoloide/display_nice_view": {
     "niceview_3dmodel_filename": "${KIPRJMOD}/models/boardstudio/infused-kim/Nice_View.step",
