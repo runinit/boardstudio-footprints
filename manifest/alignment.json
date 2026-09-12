@@ -41,7 +41,8 @@
       ],
       "terminalCount": 2,
       "geometry": "Both signal pads have a nonzero solid intersection with the socket contact geometry after KiCad STEP export",
-      "minimumIntersectionMm3": 1e-05
+      "minimumIntersectionMm3": 1e-05,
+      "cableCheck": "Both wire columns match pad numbers at F/B and0/90; pin1 BAT_N and pin2 BAT_P retained."
     },
     "ceoloide/led_sk6812mini-e": {
       "sides": [
@@ -223,6 +224,28 @@
       ],
       "limits": "Checks nominal model placement and pad mapping, not internal connector electrical continuity or manufacturing tolerances. Explicit independent model-side overrides are not covered.",
       "command": "BOARDSTUDIO_FOOTPRINTS=../boardstudio-footprints node scripts/qa/model-contacts.cjs molex5"
+    },
+    "infused-kim/conn_molex_pico_ezmate_1x02": {
+      "sides": [
+        "F",
+        "B"
+      ],
+      "rotations": [
+        0,
+        90
+      ],
+      "reverse": [
+        false,
+        true
+      ],
+      "modelSide": "default; front mounting when reverse is true",
+      "cases": 8,
+      "checks": [
+        "Both socket contacts meet selected-side copper",
+        "Cable wire columns align with matching pad numbers",
+        "Default pin1 RAW and pin2 GND mapping preserved"
+      ],
+      "limits": "Nominal placement and net mapping only; explicit independent model-side overrides and actual cable polarity are not verified."
     }
   },
   "remaining": [

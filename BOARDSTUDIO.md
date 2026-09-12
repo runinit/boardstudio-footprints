@@ -166,3 +166,11 @@ assembly. Model-origin offsets also correct MCU/header hole alignment.
 Hole sizes and centers remain unchanged; review enclosure clearance.
 Custom jumper pads now rotate with the footprint, fixing disconnected
 socket-to-jumper paths at rotated placements.
+
+### Two-pin Molex polarity conventions
+
+The two libraries use different default nets for the same connector geometry:
+ceoloide assigns pin 1 to BAT_N and pin 2 to BAT_P; infused-kim assigns pin 1
+to RAW and pin 2 to GND. The model bindings preserve those definitions.
+Choose or override nets to match the intended cable pinout; swapping library
+entries does not preserve default polarity.
