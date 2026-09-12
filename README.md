@@ -1,3 +1,11 @@
+# BoardStudio footprint library
+
+This fork adds portable model defaults and pinned model assets to the upstream
+footprints. See [BoardStudio integration and coverage](BOARDSTUDIO.md).
+Model alignment and full physical-footprint coverage are still being validated.
+
+---
+
 # @ceoloide's ergogen PCB footprints
 
 > [!WARNING]

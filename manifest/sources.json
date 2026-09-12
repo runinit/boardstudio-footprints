@@ -1,0 +1,152 @@
+{
+  "schema": 1,
+  "sources": {
+    "kiswitch": {
+      "url": "https://github.com/kiswitch/kiswitch",
+      "commit": "aefcf65038d48d2666ff14530d482be3c350fa6e",
+      "license": "vendor/kiswitch/licenses/LICENSE"
+    },
+    "ceoloide": {
+      "url": "https://github.com/ceoloide/ergogen-footprints",
+      "commit": "48935f54b456ff1503d78d6b17d9d146b54e8ade",
+      "license": "MIT; see upstream attribution for CC BY-NC-SA-derived files"
+    },
+    "infusedKim": {
+      "url": "https://github.com/infused-kim/kb_ergogen_fp",
+      "commit": "bb80a207d8a6fa7b9245caad2c2d97e2adc2f612",
+      "license": "CC BY-NC-SA-4.0"
+    }
+  },
+  "footprints": {
+    "ceoloide": {
+      "battery_connector_jst_ph_2.js": "fafe9a53df11fd99a820c9571e1bcbf5a8aedda98774e700642af5af5f00d853",
+      "battery_connector_molex_pico_ezmate_1x02.js": "301a01a1d9041c417eabe09d1cad7fafb2f390501bba175d904960a1bba11ed6",
+      "diode_tht_sod123.js": "f57b20d50876d2235682f820d818d5c599bec4f4b7adf559f20631e1018dfa46",
+      "display_nice_view.js": "bdb2080a9697fc9ddbc8ec41bd8e2b81bfbcea31f4e220cf39a0094a342a66c7",
+      "display_ssd1306.js": "484fa0c1e8cc421e9f7100d1ff765f7646a59b9fe181415edcbf7be7c6db5065",
+      "led_sk6812mini-e.js": "eb1e10b29771f5a8c6e6f120a528090eb95cd84d4241df6cc794ddd073ab657d",
+      "mcu_nice_nano.js": "435250311fedf4da930053bfbdc761b1181de0062afb2c85ba80458ea156622a",
+      "mcu_supermini_nrf52840.js": "2ec5d1021a640179f5a6e098b8813f56937c2e4d26465d84ad20ec8ff2f50315",
+      "mounting_hole_npth.js": "73d1dbff6ac90d29c819749c10942e634d89d66e5c8c8f3801b65a818159085d",
+      "mounting_hole_plated.js": "775c2eada3c8003f50737ad37b4c227c07c8bc618438c58c5bd386cd1983818e",
+      "power_switch_smd_side.js": "4271a1e95ff82bfa490dcee4050927c81e0c5a517d1c24150bb07efde84f81fb",
+      "reset_switch_smd_side.js": "232943426b5320029bbd373c6710526bc3fadab474f7473c78d4bcdd65ff0785",
+      "reset_switch_tht_top.js": "aeeea12c6ac89b7de5a7e4d73089aaf7aa752a924be50f201ce90675de4d9eb9",
+      "rotary_encoder_ec11_ec12.js": "2e4ecbd9db3f15a7dee45ed6bdc337bb3d1fad4aff8b038b1107daa772312559",
+      "switch_choc_v1_v2.js": "26b32559b9724dc6106190aedcd710e19a304e6bb16036708f41d2d4369c36c9",
+      "switch_gateron_ks27_ks33.js": "7292062fd420cd727d52b13fe0c1a8a5279fc046fb4bedbc926d54d0637e9d3e",
+      "switch_mx.js": "6921ae4671c77292f5c970e726f15c93bd600f120b72a67167647cad64466156",
+      "trrs_pj320a.js": "45453176dbaeefd71e2e6dd9003b01b7f1648eed1e8738a032eee8ad2307831c",
+      "utility_ergogen_logo.js": "eaa818115cc5816c628360cb17a42c68047c0df10062c6c37786e7b988f732cf",
+      "utility_filled_zone.js": "64e2669599303be72a40141454e8104a7ff30c5d0d5593ceb189f5002b3aaace",
+      "utility_keepout_zone.js": "cb38e5967a54e8951ebfa7922efe21669ac970d4152f5a046c9a079d27a52c58",
+      "utility_point_debugger.js": "b547ca344861efa0bc9f93c1160199e0c4035ad6545f4040f399acb394f825a4",
+      "utility_router.js": "9933af968b2e27b5d8e9c7d85b41cbdc247c10a4c31e10e8e3398cde1ff1aa05",
+      "utility_text.js": "f6b9369e6084a162712e8f37811a65501a4bfeabef07ea4276803133ff01a7a6"
+    },
+    "infused-kim": {
+      "vendor/infused-kim/choc.js": "94d2e40d27867a6ab779c00dad79e7225d7a4ac3b52ce49d4d535f4168a8d33a",
+      "vendor/infused-kim/conn_molex_pico_ezmate_1x02.js": "7c9ed0bef237485a19d0d391fde7e9cf41e32363f89639c15a381d69c4eab342",
+      "vendor/infused-kim/conn_molex_pico_ezmate_1x05.js": "3cfb91ee047d733544982423ff1d29c375159782d18338580c8481edfc455e68",
+      "vendor/infused-kim/diode.js": "197bfe0616a32339ddd659a059b45cdf559b1af83d5d269c0df8e8f07b6bab85",
+      "vendor/infused-kim/icon_bat.js": "834dc8e17f1fa71c36040002d72c79a3002a5d2e0594653499ce3e8853dec000",
+      "vendor/infused-kim/mounting_hole.js": "b183f9af41e22d200273a094c3ac419d75b44ec7d2d09e80e00b218e786c6116",
+      "vendor/infused-kim/nice_nano_pretty.js": "622b91349400c29fe076bcca565131489aa878839b52927b8a5fafb3f855d71c",
+      "vendor/infused-kim/nice_view.js": "de3f90028fd5e11e5c3879b9759877f5c1a4a987e9d2da273602e65f9cf97b99",
+      "vendor/infused-kim/pads.js": "3953d2102230825d765ae1567c8085264b83f2b8de085ea21cfb0bcb064b1234",
+      "vendor/infused-kim/point_debugger.js": "2d26f255d73a57260757e15273512c05541b8dc50a9685ac05842fa696e2d1bd",
+      "vendor/infused-kim/smd_0805.js": "89b5e194f217b1fb6d514f318f326b911d74ed47657b450dc8a022d19fd937c7",
+      "vendor/infused-kim/switch_power.js": "b36b6900beb92a64b5e6f2d9b363c68e16ac48e27672d1a819e81d642ab83ffe",
+      "vendor/infused-kim/switch_reset.js": "39c98cb0efd72f4030de77299d03665f7a0a4a91a7ec15946bbb2a995957565c",
+      "vendor/infused-kim/text.js": "ae3fcc7dacd95ae4ea2ab6cc7afe76ce8619e16b2e08a97321d29e5b094b3074",
+      "vendor/infused-kim/trackpoint_mount.js": "e785d3079687f29cc3a52391cfad7aa2aa66b71e91ccccfb7fff3c7580019e20"
+    }
+  },
+  "models": {
+    "vendor/infused-kim/3d_models/Choc_V1_Hotswap.step": "081d32412d8a6d4f5e5e9b61317f8162e508741cd2ff31abf07aa7a007bc7b10",
+    "vendor/infused-kim/3d_models/Choc_V1_Keycap_MBK_Black_1u.step": "4713e8888e3da1675c5f7cfddd71d447bad04ad7c8c960cdaf32866e119495a2",
+    "vendor/infused-kim/3d_models/Choc_V1_Keycap_MBK_Red_1u.step": "a1ea449c6ac61e84c8acd426518c98f7cda78595ea51861a45752f361d073ebb",
+    "vendor/infused-kim/3d_models/Choc_V1_Keycap_MBK_White_1u.step": "9798d2492bcba0423cd8d5e7a970e7a29eed69ed5819ce32d8b91ec8d8717e34",
+    "vendor/infused-kim/3d_models/Choc_V1_Switch.step": "669d72c083f226e1f9ee9e9dc8424c18e9641984223ba5422a1235d773a6a9a8",
+    "vendor/infused-kim/3d_models/Diode_1N4148W.step": "abe50072b241c6ce69f8e79d787644ab3ff54d1ea09d74ee8025fb2bf4228722",
+    "vendor/infused-kim/3d_models/Molex_Ezmate_Pico_Cable_2pin.step": "1e0484f2e1817b790a63b3321b25317e888a8b7b0db1131f737dd59c4b33c10f",
+    "vendor/infused-kim/3d_models/Molex_Ezmate_Pico_Cable_5pin.step": "fb914b387b439bd02d23bf1cc2ba10da460042a1cb012dd754dc92ba81d38f39",
+    "vendor/infused-kim/3d_models/Molex_Ezmate_Pico_Socket_2pin.step": "b7bad8be8927df1f75d0080ee41cdd9585a6e428e349fd314da3eb9c9b52ee49",
+    "vendor/infused-kim/3d_models/Molex_Ezmate_Pico_Socket_5pin.step": "44a743f8f2af223a451a65d96e4162c97d49c75ba955bd1f0d7e428ce165cbcd",
+    "vendor/infused-kim/3d_models/Nice_Nano_V2.step": "77fcad08b9bceca821b32733443e7bc9157230fb6340aa390797f56d5694182f",
+    "vendor/infused-kim/3d_models/Nice_View.step": "150388b930798f1287f90adb7578e2352191ab8f6db5fa2c80dc1fa47b26d23c",
+    "vendor/infused-kim/3d_models/PinHeader_2.54mm_1x-4.step": "4868c4f92165b5f8d82d41255f9faa490e93db57895259f3045eb1bd3c3e9ded",
+    "vendor/infused-kim/3d_models/PinHeader_2.54mm_1x-5.step": "6a0cdb5042d5bec86879b9a5a4526cadd7d8317a6e453d464aba60d16904d9ae",
+    "vendor/infused-kim/3d_models/PinHeader_2.54mm_2x-12.step": "888d526c5f1b5d74ad14c7130e44edab5b1601eb99ac62b808baa567bf2f1887",
+    "vendor/infused-kim/3d_models/PinSocket_2.54mm_5mm_1x-4.step": "8e7b72c3535e3a39c80ee61b4525c59470ad2a4b3be0a8c0f2013234e31b37e7",
+    "vendor/infused-kim/3d_models/PinSocket_2.54mm_5mm_1x-5.step": "1685a7ee214eb487be79f34fea42be9cf06a15a0646076254e92d43082921c8c",
+    "vendor/infused-kim/3d_models/PinSocket_2.54mm_5mm_2x-12.step": "781b7c7a4c4da02dc12ca3c5ab715303eff3859fc3a3a60070c3c3e592649719",
+    "vendor/infused-kim/3d_models/SMD_0805_Capacitor.step": "9a2fa201ffbca159125e775975a993752d00f411cb6c8260fd0dc1ab058185b1",
+    "vendor/infused-kim/3d_models/SMD_0805_Resistor.step": "28913297e82b1f494260211c6c1f47bdb9121e6b33c851270e38f6960c06e5de",
+    "vendor/infused-kim/3d_models/Switch_Power.step": "b1839f51dbb2ef206c558418a3e3efa020be7080596b1757acebee4ca1bef0ca",
+    "vendor/infused-kim/3d_models/Switch_Reset.step": "975e09d47a0a9f58cc539a24ae11acbb05d5548ab2ce309aba8af0a2c51c1b01",
+    "vendor/infused-kim/3d_models/trackpoint/TP_Cap_Green_T430.step": "9d709b7110713abd516c225facc888bbea03fc6fea90c4389cba7699f7032d98",
+    "vendor/infused-kim/3d_models/trackpoint/TP_Cap_Red_T460S.step": "6530b226f5c9e4e13bbce5696d9efbaa93a64ceb5312a3d3dfe911bd03126fa3",
+    "vendor/infused-kim/3d_models/trackpoint/TP_Extension_Red_T460S_h10.5_md0.0_pcb1.6.step": "c4d4a588c4eed6044441c3f0510e25e991cb13aee4f9702bc98c804d07357da8",
+    "vendor/infused-kim/3d_models/trackpoint/TP_Extension_Red_T460S_h10.5_md0.5_pcb1.6.step": "f24a00eb2cd78b184456ad0493e0accb3d782317709e087242203ea15fa90557",
+    "vendor/infused-kim/3d_models/trackpoint/TP_Extension_Red_T460S_h10.5_md1.0_pcb1.6.step": "1075a619ac9378e5817975dbadab6bc96c8a197b0040368b115d48ac8f0e0bf0",
+    "vendor/infused-kim/3d_models/trackpoint/TP_Extension_Red_T460S_h10.5_md2.0_pcb1.6.step": "ee60af4808791b84723f81aa4e3489cfd3beadcf67de53ef6a94efbb4946148a",
+    "vendor/infused-kim/3d_models/trackpoint/TP_Keycap_MBK_Black_stagger_2.375_large.step": "40d9eafc64f73f8ac97d473def5e0364aded98e35cf5c86f74de5c474b8f0bda",
+    "vendor/infused-kim/3d_models/trackpoint/TP_Keycap_MBK_Black_stagger_2.375_small.step": "242d2757ad2b93c55c91f03f7a00f76802271c36eeb5df3ab0b2774dcf9f5c17",
+    "vendor/infused-kim/3d_models/trackpoint/TP_Red_T460S_platform_z_offset_+0.0_pcb_offset_-2.0.step": "feb172578631b76c48a832e94c58b2ffccd73b2d3ae75adb57f4aa1266e97904",
+    "vendor/infused-kim/3d_models/trackpoint/TP_Red_T460S_screw_mount_z_offset_+0.0_pcb_-2.0.step": "8b8d14ee1c33c3376c42eae649f95e19b2ea13c9452e49bd981b74ce7f000b6e",
+    "vendor/infused-kim/3d_models/trackpoint/TP_Red_T460S_screw_mount_z_offset_-2.0_pcb_+0.0.step": "f9ce942f949487e9f01fd82045e4453ca1e91b0990697f99994f83f224308f05",
+    "vendor/kiswitch/3d_models/SW_Cherry_MX_PCB.stp": "ddf0fb3a776faa6105303efb98e39645e044c43b3ac03cbfe75d8eda28e297f4",
+    "vendor/kiswitch/3d_models/SW_Cherry_MX_PCB.stp.stl": "173dd44849a52df35cf84bd5f1b7ed112be9e9334fa26531364c7a99690f6b41",
+    "vendor/kiswitch/3d_models/SW_Hotswap_Kailh_Choc_V1.stp": "081d32412d8a6d4f5e5e9b61317f8162e508741cd2ff31abf07aa7a007bc7b10",
+    "vendor/kiswitch/3d_models/SW_Hotswap_Kailh_Choc_V1.stp.stl": "cf007a5ced60b58f0b7a94b842accb32555f3e63e33364e455fea786c0fcf59f",
+    "vendor/kiswitch/3d_models/SW_Hotswap_Kailh_MX.stp": "31dd9ab0a892e02f43c13f07c3d78f83dbe64390178e64b2f1f6df4849935e5b",
+    "vendor/kiswitch/3d_models/SW_Hotswap_Kailh_MX.stp.stl": "cbb0e18dccce3973c928819d885e58adf4b1940ee76f91d3a5d993f2a1597a86",
+    "vendor/kiswitch/3d_models/SW_Kailh_Choc_V1.stp": "669d72c083f226e1f9ee9e9dc8424c18e9641984223ba5422a1235d773a6a9a8",
+    "vendor/kiswitch/3d_models/SW_Kailh_Choc_V1.stp.stl": "55afc59fed4fed728d28725f2cb5fdab98b4195eea1fc1fe47862f64277f7a41"
+  },
+  "mappings": {
+    "candidates": {
+      "infused-kim/choc": [
+        "vendor/infused-kim/3d_models/Choc_V1_Switch.step",
+        "vendor/infused-kim/3d_models/Choc_V1_Hotswap.step"
+      ],
+      "infused-kim/conn_molex_pico_ezmate_1x02": [
+        "vendor/infused-kim/3d_models/Molex_Ezmate_Pico_Socket_2pin.step"
+      ],
+      "infused-kim/conn_molex_pico_ezmate_1x05": [
+        "vendor/infused-kim/3d_models/Molex_Ezmate_Pico_Socket_5pin.step"
+      ],
+      "infused-kim/nice_nano_pretty": [
+        "vendor/infused-kim/3d_models/Nice_Nano_V2.step"
+      ],
+      "infused-kim/nice_view": [
+        "vendor/infused-kim/3d_models/Nice_View.step"
+      ],
+      "infused-kim/smd_0805": [
+        "vendor/infused-kim/3d_models/SMD_0805_Capacitor.step",
+        "vendor/infused-kim/3d_models/SMD_0805_Resistor.step"
+      ],
+      "infused-kim/switch_power": [
+        "vendor/infused-kim/3d_models/Switch_Power.step"
+      ],
+      "infused-kim/switch_reset": [
+        "vendor/infused-kim/3d_models/Switch_Reset.step"
+      ]
+    },
+    "unverifiedAlignment": true,
+    "nonphysical": [
+      "utility_ergogen_logo",
+      "utility_filled_zone",
+      "utility_keepout_zone",
+      "utility_point_debugger",
+      "utility_router",
+      "utility_text",
+      "point_debugger",
+      "text"
+    ],
+    "pcbOnly": [
+      "pads"
+    ]
+  }
+}

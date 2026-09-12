@@ -1,0 +1,9 @@
+{
+  "name": "@boardstudio/footprints",
+  "version": "0.1.0",
+  "private": true,
+  "type": "commonjs",
+  "scripts": {
+    "test": "node scripts/inventory.test.mjs && node scripts/defaultModels.test.mjs && node scripts/verify.mjs"
+  }
+}

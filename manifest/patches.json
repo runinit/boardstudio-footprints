@@ -1,0 +1,8 @@
+[
+  {
+    "path": "vendor/infused-kim/point_debugger.js",
+    "upstreamUrl": "https://raw.githubusercontent.com/infused-kim/kb_ergogen_fp/bb80a207d8a6fa7b9245caad2c2d97e2adc2f612/point_debugger.js",
+    "upstreamSha256": "4230248e48162c4d7a133beb5573c27aa70e3933fceaa3925389daae5343e82f",
+    "reason": "Remove stray quote after the reference designator to emit valid KiCad S-expressions."
+  }
+]
