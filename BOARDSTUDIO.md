@@ -106,6 +106,7 @@ physical socket/header solids are outside this check's scope.
 The ceoloide Choc V1 hotswap default places the switch and cap opposite the
 socket side. Model transforms use `pcb_thickness` (1.6 mm by default) and
 a 6.6 mm keycap seating offset; match `pcb_thickness` to the board when
-changing board thickness. Four exported cases verify switch pins and socket
-contacts on F/B at 0/90 degrees. Reversible and alternate pad layouts are
-not covered by this check. Explicit model transforms remain authoritative.
+changing board thickness. 32 exported cases verify switch pins and socket contacts on F/B at 0/90
+degrees, including single/reversible, alternate pad placement and plated holes.
+Solder-only and Choc V2 remain outside this check. Explicit model transforms
+remain authoritative.

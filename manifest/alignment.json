@@ -153,11 +153,24 @@
         0,
         90
       ],
-      "scope": "Single-sided Choc V1 hotswap, default pad layout",
+      "scope": "Choc V1 hotswap, single/reversible, alternate pad placement and plated holes",
       "xy": "Both switch pins enter their drilled holes; socket terminals meet separate copper pads",
       "maximumSolderGapMm": 0.1,
       "modelPcbThicknessMm": 1.6,
-      "limitation": "Reversible, alternate pad layouts, non-default board thickness and Choc V2 remain unverified"
+      "limitation": "Solder-only, non-default board thickness and Choc V2 remain unverified",
+      "reversible": [
+        false,
+        true
+      ],
+      "hotswapPadsSameSide": [
+        false,
+        true
+      ],
+      "includePlatedHoles": [
+        false,
+        true
+      ],
+      "cases": 32
     }
   },
   "remaining": [
