@@ -199,6 +199,30 @@
       "maximumSolderGapMm": 0.1,
       "modelPcbThicknessMm": 1.6,
       "limitation": "Solder-only and non-default board thickness remain unverified"
+    },
+    "infused-kim/conn_molex_pico_ezmate_1x05": {
+      "sides": [
+        "F",
+        "B"
+      ],
+      "rotations": [
+        0,
+        90
+      ],
+      "reverse": [
+        false,
+        true
+      ],
+      "modelSide": "default; front mounting when reverse is true",
+      "cases": 8,
+      "signalContacts": 5,
+      "checks": [
+        "Socket solid intersects all five selected-side signal pads",
+        "Cable wire columns align with matching pad numbers after mirroring",
+        "Pad nets remain CONN_1 through CONN_5"
+      ],
+      "limits": "Checks nominal model placement and pad mapping, not internal connector electrical continuity or manufacturing tolerances. Explicit independent model-side overrides are not covered.",
+      "command": "BOARDSTUDIO_FOOTPRINTS=../boardstudio-footprints node scripts/qa/model-contacts.cjs molex5"
     }
   },
   "remaining": [
