@@ -325,7 +325,7 @@ module.exports = {
                 },
             )}
 
-            ${ gen_3d_model(
+            ${ p.hotswap ? gen_3d_model(
                 p.hotswap_3dmodel_filename,
                 p.hotswap_3dmodel_xyz_scale,
                 p.hotswap_3dmodel_xyz_rotation,
@@ -338,7 +338,7 @@ module.exports = {
                     rotation_b: [0, 180, 0],
                     offset_b: [0, 0, -1.6],
                 },
-            )}
+            ) : ''}
 
             ${common_bottom}
         `

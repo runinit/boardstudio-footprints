@@ -195,3 +195,7 @@ Default binding rejects a smaller center drill instead of exporting intersecting
 geometry. The default 5.5 mm drill remains supported. Explicit model or transform
 overrides are retained and require their own fit check. A compatible extension
 for the documented 3.5 mm drill option is not currently bundled.
+
+Infused-kim Choc omits the socket model when `hotswap: false`. Solder-only
+exports retain switch and keycap models; four F/B and 0/90-degree reversible
+checks confirm both solder pins fit their holes and reach distinct nets.

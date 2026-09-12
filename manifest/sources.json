@@ -70,7 +70,7 @@
       "utility_text.js": "f6b9369e6084a162712e8f37811a65501a4bfeabef07ea4276803133ff01a7a6"
     },
     "infused-kim": {
-      "vendor/infused-kim/choc.js": "94d2e40d27867a6ab779c00dad79e7225d7a4ac3b52ce49d4d535f4168a8d33a",
+      "vendor/infused-kim/choc.js": "c510cb20ca646ebdad469ca9bd983990b6cda71d51207d19fa48cb40db4d9f97",
       "vendor/infused-kim/conn_molex_pico_ezmate_1x02.js": "7c9ed0bef237485a19d0d391fde7e9cf41e32363f89639c15a381d69c4eab342",
       "vendor/infused-kim/conn_molex_pico_ezmate_1x05.js": "3cfb91ee047d733544982423ff1d29c375159782d18338580c8481edfc455e68",
       "vendor/infused-kim/diode.js": "197bfe0616a32339ddd659a059b45cdf559b1af83d5d269c0df8e8f07b6bab85",
