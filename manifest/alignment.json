@@ -412,6 +412,107 @@
       ],
       "command": "QA_KEEP_MODELS=1 node scripts/qa/model-contacts.cjs power_infused (from ergogen-gui)",
       "limits": "Default dimensions and model transforms; reversed default model uses B side."
+    },
+    "infused-kim/smd_0805": {
+      "cases": 28,
+      "sides": [
+        "F",
+        "B"
+      ],
+      "rotations": [
+        0,
+        90
+      ],
+      "componentCounts": [
+        1,
+        2,
+        6
+      ],
+      "customSpacingMm": 0.8,
+      "customCases": {
+        "components": 2,
+        "mirror": [
+          false,
+          true
+        ],
+        "swap_pad_direction": [
+          false,
+          true
+        ]
+      },
+      "maximumSolderGapMm": 0.1,
+      "checks": [
+        "Every resistor terminal fits one actual KiCad-exported copper pad",
+        "Each resistor body bridges one distinct SMD_n_F/SMD_n_T net pair"
+      ],
+      "command": "QA_KEEP_MODELS=1 node scripts/qa/model-contacts.cjs smd0805 (from ergogen-gui)",
+      "limits": "Bundled resistor model; other component models, spacing values and arbitrary rotations remain outside this check."
+    },
+    "ceoloide/display_nice_view": {
+      "cases": 16,
+      "sides": [
+        "F",
+        "B"
+      ],
+      "rotations": [
+        0,
+        90
+      ],
+      "variants": {
+        "reversible": [
+          false,
+          true
+        ],
+        "invert_jumpers_position": [
+          false,
+          true
+        ]
+      },
+      "checks": [
+        "Five display and header hole centers align",
+        "Header pins pass through the display board",
+        "Five socket tails fit actual exported PCB drills",
+        "Socket housing does not intersect the display PCB",
+        "MOSI/SCK/VCC/GND/CS order matches the selected jumper arrangement"
+      ],
+      "routing": "Connectivity follows emitted traces from socket holes to the selected jumper pads.",
+      "command": "QA_KEEP_MODELS=1 node scripts/qa/model-contacts.cjs nice_view_r (from ergogen-gui)",
+      "limits": "Bundled display/header/socket assembly at default dimensions; arbitrary rotations and modified board thickness remain unverified."
+    },
+    "infused-kim/nice_view": {
+      "cases": 24,
+      "sides": [
+        "F",
+        "B"
+      ],
+      "rotations": [
+        0,
+        90
+      ],
+      "variants": {
+        "reverse": [
+          false,
+          true
+        ],
+        "jumpers_at_bottom": [
+          false,
+          true
+        ],
+        "display_3dmodel_side": [
+          "default",
+          "B for reverse"
+        ]
+      },
+      "checks": [
+        "Five display and header hole centers align",
+        "Header pins pass through the display board",
+        "Five socket tails fit actual exported PCB drills",
+        "Socket housing does not intersect the display PCB",
+        "MOSI/SCK/VCC/GND/CS order matches the selected jumper arrangement"
+      ],
+      "routing": "Jumper pad net order is checked; Infused-Kim requires manual routing between its pads.",
+      "command": "QA_KEEP_MODELS=1 node scripts/qa/model-contacts.cjs nice_view_infused (from ergogen-gui)",
+      "limits": "Bundled display/header/socket assembly at default dimensions; arbitrary rotations and modified board thickness remain unverified."
     }
   },
   "remaining": [

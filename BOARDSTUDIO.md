@@ -228,3 +228,13 @@ All physical terminals fit their copper pads within a 0.1 mm solder gap.
 Reset pads retain GND/RST. The power switch's middle terminal connects to
 BAT_P (pad 2 on F, pad 5 on B); the connected outer terminal retains RAW.
 Reversed defaults place the model on B. These checks use default dimensions.
+
+The 0805 resistor default passes 28 native exports: 1/2/6 components on
+F/B at 0/90 degrees, plus two-component mirror/pad-direction variants with
+0.8 mm spacing. Each body bridges its own net pair and both terminals fit
+copper. Other model types and spacing values are outside this check.
+
+Nice!view checks cover 16 ceoloide and 24 Infused-Kim cases. Display/header
+rows align, socket tails fit the PCB drills, and MOSI/SCK/VCC/GND/CS order
+matches the jumper arrangement. Ceoloide trace connectivity is checked;
+Infused-Kim provides pads requiring manual routing.
