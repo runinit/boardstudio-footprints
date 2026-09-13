@@ -581,6 +581,22 @@
       ],
       "command": "QA_KEEP_MODELS=1 node scripts/qa/model-contacts.cjs nano_infused (from ergogen-gui)",
       "limits": "Default reversible footprint with bundled module/header/socket assembly; modified spacing, heights, tilt and thickness remain unverified."
+    },
+    "infused-kim/trackpoint_mount": {
+      "assemblyCases": 2,
+      "sides": [
+        "F",
+        "B"
+      ],
+      "rotation": 0,
+      "generationCases": 12,
+      "checks": [
+        "Both 0.8 mm-radius mounting bores share centers with the actual exported 2.2 mm PCB drills on F and B",
+        "Native generation accepts default extension and rejects incompatible 3.5 mm center drill across side/reverse combinations",
+        "Explicit custom model permits an intentional smaller center drill"
+      ],
+      "limits": "Mounting-hole centers and default-extension guard only. No electrical net, complete collision, arbitrary rotation or fabrication-tolerance claim.",
+      "evidence": "Retained workspace scripts and reports in model-source-candidates/trackpoint-audit; refreshed against the quoted-filename library."
     }
   },
   "remaining": [
