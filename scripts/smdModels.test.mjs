@@ -55,13 +55,13 @@ for (const [key, value] of Object.entries(params)) {
   }
 }
 let output = footprint.body(params);
-assert.match(output, /\(model first\.step[\s\S]*?\(scale \(xyz 2 3 4\)\)/);
+assert.match(output, /\(model "first\.step"[\s\S]*?\(scale \(xyz 2 3 4\)\)/);
 
 // With mirroring disabled, each model must remain over its own net's pads.
 params.mirror = false;
 output = footprint.body(params);
 const firstX =
-  Number(output.match(/\(model first\.step\s+\(at \(xyz ([^ ]+)/)[1]) * 25.4;
+  Number(output.match(/\(model "first\.step"\s+\(at \(xyz ([^ ]+)/)[1]) * 25.4;
 assert.ok(
   Math.abs(firstX - -1.5125) < 1e-9,
   `model x=${firstX}, pad x=-1.5125`,
@@ -84,7 +84,7 @@ for (const side of ["F", "B"]) {
       for (let index = 1; index <= components; index++) {
         const match = result.match(
           new RegExp(
-            `\\(model part${index}\\.step\\s+\\(at \\(xyz ([^ ]+) ([^ ]+) ([^)]+)`,
+            `\\(model "part${index}\\.step"\\s+\\(at \\(xyz ([^ ]+) ([^ ]+) ([^)]+)`,
           ),
         );
         assert.ok(match, `${side}/${mirror}/${components}: model ${index}`);

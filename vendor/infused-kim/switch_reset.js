@@ -72,7 +72,7 @@ module.exports = {
         final_offset = final_offset.map(value => value / offset_divisor);
 
         return  `
-          (model ${filename}
+          (model ${JSON.stringify(filename)}
             (at (xyz ${final_offset[0]} ${final_offset[1]} ${final_offset[2]}))
             (scale (xyz ${final_scale[0]} ${final_scale[1]} ${final_scale[2]}))
             (rotate (xyz ${final_rotation[0]} ${final_rotation[1]} ${final_rotation[2]}))

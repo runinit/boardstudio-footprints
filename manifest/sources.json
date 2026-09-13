@@ -75,21 +75,21 @@
       "utility_text.js": "f6b9369e6084a162712e8f37811a65501a4bfeabef07ea4276803133ff01a7a6"
     },
     "infused-kim": {
-      "vendor/infused-kim/choc.js": "c510cb20ca646ebdad469ca9bd983990b6cda71d51207d19fa48cb40db4d9f97",
-      "vendor/infused-kim/conn_molex_pico_ezmate_1x02.js": "7c9ed0bef237485a19d0d391fde7e9cf41e32363f89639c15a381d69c4eab342",
-      "vendor/infused-kim/conn_molex_pico_ezmate_1x05.js": "3cfb91ee047d733544982423ff1d29c375159782d18338580c8481edfc455e68",
-      "vendor/infused-kim/diode.js": "197bfe0616a32339ddd659a059b45cdf559b1af83d5d269c0df8e8f07b6bab85",
+      "vendor/infused-kim/choc.js": "3f7e06dbdac3b1d26332932d892aa4c2549fd526df998bea9c41df807fb9c045",
+      "vendor/infused-kim/conn_molex_pico_ezmate_1x02.js": "44feac7fede7d4f6981766dcc253358722c0974e98abbd42a092eea693314d9b",
+      "vendor/infused-kim/conn_molex_pico_ezmate_1x05.js": "228beaaea4914e438b366936d9dac108a18c9503242588da584ebaa520307b8a",
+      "vendor/infused-kim/diode.js": "5edb4504ff39e619c6d5ee214e6269ff1901cfeeb32c1a30d602af5583c1c22f",
       "vendor/infused-kim/icon_bat.js": "834dc8e17f1fa71c36040002d72c79a3002a5d2e0594653499ce3e8853dec000",
       "vendor/infused-kim/mounting_hole.js": "b183f9af41e22d200273a094c3ac419d75b44ec7d2d09e80e00b218e786c6116",
-      "vendor/infused-kim/nice_nano_pretty.js": "a3c84af9f6909fd56b3221b19b5815d8d1e37a98a4d804349d798f9a691190a5",
-      "vendor/infused-kim/nice_view.js": "db3102ef3c0789c16d195688c620ddcfcea02b98f90d4938f99ecee04941f239",
+      "vendor/infused-kim/nice_nano_pretty.js": "6ad0a854d62d85a7c8b66c52002cf583580cd3ca607f27695f2aa7b2bfdeb609",
+      "vendor/infused-kim/nice_view.js": "735569f2954bdd6759cf7c13bb9a205be0ef5554648b87812d6fbf741518bc34",
       "vendor/infused-kim/pads.js": "3953d2102230825d765ae1567c8085264b83f2b8de085ea21cfb0bcb064b1234",
       "vendor/infused-kim/point_debugger.js": "2d26f255d73a57260757e15273512c05541b8dc50a9685ac05842fa696e2d1bd",
-      "vendor/infused-kim/smd_0805.js": "294352f47c89337eb118e6db5999cfca084c5ac3da5fd99a6f0dcb76324f7dad",
-      "vendor/infused-kim/switch_power.js": "b36b6900beb92a64b5e6f2d9b363c68e16ac48e27672d1a819e81d642ab83ffe",
-      "vendor/infused-kim/switch_reset.js": "39c98cb0efd72f4030de77299d03665f7a0a4a91a7ec15946bbb2a995957565c",
+      "vendor/infused-kim/smd_0805.js": "45ed74e0239aa918e949b37aac8bba4a174a3d4cc75810c93485d4a7cebeaa77",
+      "vendor/infused-kim/switch_power.js": "9e9d65115dae3a98098551021eff8b7fda3b4eb47e2b16ef80a5ee19765132e8",
+      "vendor/infused-kim/switch_reset.js": "be8e7af2a0a25cb05825adb3431df1859cb9455fca9dd792b2050c1f49d755b4",
       "vendor/infused-kim/text.js": "ae3fcc7dacd95ae4ea2ab6cc7afe76ce8619e16b2e08a97321d29e5b094b3074",
-      "vendor/infused-kim/trackpoint_mount.js": "e785d3079687f29cc3a52391cfad7aa2aa66b71e91ccccfb7fff3c7580019e20"
+      "vendor/infused-kim/trackpoint_mount.js": "d3c3435e6c28c6df50799cc19b41fbb2c8e3ace13d270d78eab001db3c379078"
     }
   },
   "models": {

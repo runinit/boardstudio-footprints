@@ -9,7 +9,7 @@
     "path": "vendor/infused-kim/smd_0805.js",
     "upstreamUrl": "https://raw.githubusercontent.com/infused-kim/kb_ergogen_fp/bb80a207d8a6fa7b9245caad2c2d97e2adc2f612/smd_0805.js",
     "upstreamSha256": "89b5e194f217b1fb6d514f318f326b911d74ed47657b450dc8a022d19fd937c7",
-    "reason": "Honor declared xyz transform overrides and preserve model-to-net positions when back-side mirroring is disabled; keep helper variables local."
+    "reason": "Honor declared xyz transform overrides and preserve model-to-net positions when back-side mirroring is disabled; keep helper variables local. Quote model filenames so paths containing spaces remain valid KiCad tokens."
   },
   {
     "path": "battery_connector_molex_pico_ezmate_1x02.js",
@@ -88,13 +88,13 @@
     "path": "vendor/infused-kim/nice_view.js",
     "upstreamSha256": "de3f90028fd5e11e5c3879b9759877f5c1a4a987e9d2da273602e65f9cf97b99",
     "upstreamUrl": "https://raw.githubusercontent.com/infused-kim/kb_ergogen_fp/bb80a207d8a6fa7b9245caad2c2d97e2adc2f612/nice_view.js",
-    "reason": "Align display/header/socket models with standard8.5mm socket and preserve model-side and transform overrides."
+    "reason": "Align display/header/socket models with standard8.5mm socket and preserve model-side and transform overrides. Quote model filenames so paths containing spaces remain valid KiCad tokens."
   },
   {
     "path": "vendor/infused-kim/nice_nano_pretty.js",
     "upstreamSha256": "622b91349400c29fe076bcca565131489aa878839b52927b8a5fafb3f855d71c",
     "upstreamUrl": "https://raw.githubusercontent.com/infused-kim/kb_ergogen_fp/bb80a207d8a6fa7b9245caad2c2d97e2adc2f612/nice_nano_pretty.js",
-    "reason": "Align MCU/header datums and paired8.5mm KiCad sockets; rotate custom jumper pads with the footprint to retain trace connectivity."
+    "reason": "Align MCU/header datums and paired8.5mm KiCad sockets; rotate custom jumper pads with the footprint to retain trace connectivity. Quote model filenames so paths containing spaces remain valid KiCad tokens."
   },
   {
     "path": "rotary_encoder_ec11_ec12.js",
@@ -118,6 +118,48 @@
     "path": "switch_gateron_ks27_ks33.js",
     "upstreamUrl": "https://raw.githubusercontent.com/ceoloide/ergogen-footprints/48935f54b456ff1503d78d6b17d9d146b54e8ade/switch_gateron_ks27_ks33.js",
     "upstreamSha256": "7292062fd420cd727d52b13fe0c1a8a5279fc046fb4bedbc926d54d0637e9d3e",
+    "reason": "Quote model filenames so paths containing spaces remain valid KiCad tokens."
+  },
+  {
+    "path": "vendor/infused-kim/choc.js",
+    "upstreamUrl": "https://raw.githubusercontent.com/infused-kim/kb_ergogen_fp/bb80a207d8a6fa7b9245caad2c2d97e2adc2f612/choc.js",
+    "upstreamSha256": "94d2e40d27867a6ab779c00dad79e7225d7a4ac3b52ce49d4d535f4168a8d33a",
+    "reason": "Quote model filenames so paths containing spaces remain valid KiCad tokens."
+  },
+  {
+    "path": "vendor/infused-kim/conn_molex_pico_ezmate_1x02.js",
+    "upstreamUrl": "https://raw.githubusercontent.com/infused-kim/kb_ergogen_fp/bb80a207d8a6fa7b9245caad2c2d97e2adc2f612/conn_molex_pico_ezmate_1x02.js",
+    "upstreamSha256": "7c9ed0bef237485a19d0d391fde7e9cf41e32363f89639c15a381d69c4eab342",
+    "reason": "Quote model filenames so paths containing spaces remain valid KiCad tokens."
+  },
+  {
+    "path": "vendor/infused-kim/conn_molex_pico_ezmate_1x05.js",
+    "upstreamUrl": "https://raw.githubusercontent.com/infused-kim/kb_ergogen_fp/bb80a207d8a6fa7b9245caad2c2d97e2adc2f612/conn_molex_pico_ezmate_1x05.js",
+    "upstreamSha256": "3cfb91ee047d733544982423ff1d29c375159782d18338580c8481edfc455e68",
+    "reason": "Quote model filenames so paths containing spaces remain valid KiCad tokens."
+  },
+  {
+    "path": "vendor/infused-kim/diode.js",
+    "upstreamUrl": "https://raw.githubusercontent.com/infused-kim/kb_ergogen_fp/bb80a207d8a6fa7b9245caad2c2d97e2adc2f612/diode.js",
+    "upstreamSha256": "197bfe0616a32339ddd659a059b45cdf559b1af83d5d269c0df8e8f07b6bab85",
+    "reason": "Quote model filenames so paths containing spaces remain valid KiCad tokens."
+  },
+  {
+    "path": "vendor/infused-kim/switch_power.js",
+    "upstreamUrl": "https://raw.githubusercontent.com/infused-kim/kb_ergogen_fp/bb80a207d8a6fa7b9245caad2c2d97e2adc2f612/switch_power.js",
+    "upstreamSha256": "b36b6900beb92a64b5e6f2d9b363c68e16ac48e27672d1a819e81d642ab83ffe",
+    "reason": "Quote model filenames so paths containing spaces remain valid KiCad tokens."
+  },
+  {
+    "path": "vendor/infused-kim/switch_reset.js",
+    "upstreamUrl": "https://raw.githubusercontent.com/infused-kim/kb_ergogen_fp/bb80a207d8a6fa7b9245caad2c2d97e2adc2f612/switch_reset.js",
+    "upstreamSha256": "39c98cb0efd72f4030de77299d03665f7a0a4a91a7ec15946bbb2a995957565c",
+    "reason": "Quote model filenames so paths containing spaces remain valid KiCad tokens."
+  },
+  {
+    "path": "vendor/infused-kim/trackpoint_mount.js",
+    "upstreamUrl": "https://raw.githubusercontent.com/infused-kim/kb_ergogen_fp/bb80a207d8a6fa7b9245caad2c2d97e2adc2f612/trackpoint_mount.js",
+    "upstreamSha256": "e785d3079687f29cc3a52391cfad7aa2aa66b71e91ccccfb7fff3c7580019e20",
     "reason": "Quote model filenames so paths containing spaces remain valid KiCad tokens."
   }
 ]
