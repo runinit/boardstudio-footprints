@@ -364,7 +364,20 @@
         "Production native worker, visible rendering, and ZIP bytes/license delivery pass"
       ],
       "limits": "KS-33 only; KS-27 equivalence, socket model, arbitrary rotations and other board thicknesses remain unverified.",
-      "evidence": "model-source-candidates/gildev-gdek-629946873bc5 in integration workspace"
+      "evidence": "model-source-candidates/gildev-gdek-629946873bc5 in integration workspace",
+      "packageDimensions": {
+        "part": "KS-33H10B050NN-Y31",
+        "drawingVersion": 5,
+        "drawingDate": "2023-09-05",
+        "command": "python scripts/gateronDimensions.py (from boardstudio-footprints)",
+        "checks": [
+          "Total height 12.15 +0.20/-0 mm",
+          "Body width/depth 15 mm within general tolerance",
+          "Both terminal XY centers within general tolerance",
+          "Central post diameter 5.05 +/-0.05 mm"
+        ],
+        "limits": "Principal static package dimensions only; no material, travel or complete molded-surface verification."
+      }
     },
     "infused-kim/switch_reset": {
       "cases": 8,

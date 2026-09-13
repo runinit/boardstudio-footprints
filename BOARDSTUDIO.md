@@ -257,7 +257,11 @@ alignment reference: https://tech.alpsalpine.com/e/products/detail/EC11E15244G1/
 The generic EC11/EC12 footprint and candidate models are not yet verified
 against this exact part; selecting it does not establish compatibility.
 
-Use Gateron KS-33H10B050NN-Y24 (Low Profile 2.0 Red) as the switch package
-target. Reference: https://gateron.com/u_file/2311/10/file/GATERONKS-33LowProfile20RedSwitchBlackBottomHousing-KS-33H10B050NN-Y24.pdf.
-The bundled GDEK KS33 model has passed footprint contact checks, but its
-dimensions still need comparison with this exact manufacturer's part.
+Use Gateron KS-33H10B050NN-Y31 (white-housing Low Profile 2.0 Red) as the
+switch package target. This replaces the preliminary black-housing Y24 choice.
+The bundled GDEK model matches the Y31 drawing's 12.15 mm total height,
+15 mm body width/depth, two terminal positions and 5.05 mm mounting post,
+within the drawing's tolerances. Run `python scripts/gateronDimensions.py`
+with system FreeCAD installed. This checks principal package dimensions;
+it does not verify every molded feature, material or switch travel.
+Reference: https://gateron.com/u_file/2311/10/file/GATERONKS-33LowProfileRed20SwitchWhiteBottomHousingKS-33H10B050NN-Y31.pdf.
