@@ -95,5 +95,11 @@
     "upstreamSha256": "622b91349400c29fe076bcca565131489aa878839b52927b8a5fafb3f855d71c",
     "upstreamUrl": "https://raw.githubusercontent.com/infused-kim/kb_ergogen_fp/bb80a207d8a6fa7b9245caad2c2d97e2adc2f612/nice_nano_pretty.js",
     "reason": "Align MCU/header datums and paired8.5mm KiCad sockets; rotate custom jumper pads with the footprint to retain trace connectivity."
+  },
+  {
+    "path": "rotary_encoder_ec11_ec12.js",
+    "upstreamUrl": "https://raw.githubusercontent.com/ceoloide/ergogen-footprints/48935f54b456ff1503d78d6b17d9d146b54e8ade/rotary_encoder_ec11_ec12.js",
+    "upstreamSha256": "2e4ecbd9db3f15a7dee45ed6bdc337bb3d1fad4aff8b038b1107daa772312559",
+    "reason": "Allow part-specific round or oval signal drills while retaining default geometry, pad centers and nets."
   }
 ]
