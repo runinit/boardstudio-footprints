@@ -26,7 +26,7 @@ assert.doesNotThrow(() => footprint.body({...params,center_hole_diameter:4.8}));
 assert.doesNotMatch(footprint.body({...params,hotswap:false,solder:true}), /Choc_V1_Hotswap/);
 for (const [side,rotation] of [['F','180 0 0'],['B','0 180 0']]) {
   const rendered=footprint.body({...params,side});
-  const model=rendered.slice(rendered.indexOf('(model ${KIPRJMOD}/models/boardstudio/koktoh/'));
+  const model=rendered.slice(rendered.indexOf('(model "${KIPRJMOD}/models/boardstudio/koktoh/'));
   assert.ok(model.includes(`(rotate (xyz ${rotation}))`));
   assert.ok(model.includes('(offset (xyz 0 0 -1.6))'));
 }

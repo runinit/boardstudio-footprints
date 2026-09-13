@@ -39,31 +39,31 @@
     "path": "reset_switch_smd_side.js",
     "upstreamUrl": "https://raw.githubusercontent.com/ceoloide/ergogen-footprints/48935f54b456ff1503d78d6b17d9d146b54e8ade/reset_switch_smd_side.js",
     "upstreamSha256": "232943426b5320029bbd373c6710526bc3fadab474f7473c78d4bcdd65ff0785",
-    "reason": "Support a side-aware default rotation while preserving explicit model transforms."
+    "reason": "Support a side-aware default rotation while preserving explicit model transforms. Quote model filenames so paths containing spaces remain valid KiCad tokens."
   },
   {
     "path": "battery_connector_jst_ph_2.js",
     "upstreamUrl": "https://raw.githubusercontent.com/ceoloide/ergogen-footprints/48935f54b456ff1503d78d6b17d9d146b54e8ade/battery_connector_jst_ph_2.js",
     "upstreamSha256": "fafe9a53df11fd99a820c9571e1bcbf5a8aedda98774e700642af5af5f00d853",
-    "reason": "Center the pin-1-origin JST model for the selected side while preserving explicit transforms and all copper/net geometry."
+    "reason": "Center the pin-1-origin JST model for the selected side while preserving explicit transforms and all copper/net geometry. Quote model filenames so paths containing spaces remain valid KiCad tokens."
   },
   {
     "path": "mcu_nice_nano.js",
     "upstreamUrl": "https://raw.githubusercontent.com/ceoloide/ergogen-footprints/48935f54b456ff1503d78d6b17d9d146b54e8ade/mcu_nice_nano.js",
     "upstreamSha256": "435250311fedf4da930053bfbdc761b1181de0062afb2c85ba80458ea156622a",
-    "reason": "Align bundled model hole datum and socket height for both sides and mounting orientations; retain explicit transforms."
+    "reason": "Align bundled model hole datum and socket height for both sides and mounting orientations; retain explicit transforms. Quote model filenames so paths containing spaces remain valid KiCad tokens."
   },
   {
     "path": "switch_choc_v1_v2.js",
     "upstreamUrl": "https://raw.githubusercontent.com/ceoloide/ergogen-footprints/48935f54b456ff1503d78d6b17d9d146b54e8ade/switch_choc_v1_v2.js",
     "upstreamSha256": "26b32559b9724dc6106190aedcd710e19a304e6bb16036708f41d2d4369c36c9",
-    "reason": "Place switch and cap opposite socket side using PCB thickness and cap seating height; preserve explicit model transforms. Include both Choc V2 stabilizer holes for combined solder and hotswap mounting."
+    "reason": "Place switch and cap opposite socket side using PCB thickness and cap seating height; preserve explicit model transforms. Include both Choc V2 stabilizer holes for combined solder and hotswap mounting. Quote model filenames so paths containing spaces remain valid KiCad tokens."
   },
   {
     "path": "switch_mx.js",
     "upstreamUrl": "https://raw.githubusercontent.com/ceoloide/ergogen-footprints/48935f54b456ff1503d78d6b17d9d146b54e8ade/switch_mx.js",
     "upstreamSha256": "6921ae4671c77292f5c970e726f15c93bd600f120b72a67167647cad64466156",
-    "reason": "Place bundled MX switch opposite socket side and correct housing datum; retain explicit model transforms."
+    "reason": "Place bundled MX switch opposite socket side and correct housing datum; retain explicit model transforms. Quote model filenames so paths containing spaces remain valid KiCad tokens."
   },
   {
     "path": "reset_switch_tht_top.js",
@@ -76,13 +76,13 @@
     "path": "mcu_supermini_nrf52840.js",
     "upstreamUrl": "https://raw.githubusercontent.com/ceoloide/ergogen-footprints/48935f54b456ff1503d78d6b17d9d146b54e8ade/mcu_supermini_nrf52840.js",
     "upstreamSha256": "2ec5d1021a640179f5a6e098b8813f56937c2e4d26465d84ad20ec8ff2f50315",
-    "reason": "Align the Tsuki Supermini model with single-side and reversible pin order, preserving explicit transforms and copper."
+    "reason": "Align the Tsuki Supermini model with single-side and reversible pin order, preserving explicit transforms and copper. Quote model filenames so paths containing spaces remain valid KiCad tokens."
   },
   {
     "path": "display_nice_view.js",
     "upstreamSha256": "bdb2080a9697fc9ddbc8ec41bd8e2b81bfbcea31f4e220cf39a0094a342a66c7",
     "upstreamUrl": "https://raw.githubusercontent.com/ceoloide/ergogen-footprints/48935f54b456ff1503d78d6b17d9d146b54e8ade/display_nice_view.js",
-    "reason": "Align the display, header and socket model origins with their shared five-pin row; preserve explicit transforms."
+    "reason": "Align the display, header and socket model origins with their shared five-pin row; preserve explicit transforms. Quote model filenames so paths containing spaces remain valid KiCad tokens."
   },
   {
     "path": "vendor/infused-kim/nice_view.js",
@@ -101,5 +101,23 @@
     "upstreamUrl": "https://raw.githubusercontent.com/ceoloide/ergogen-footprints/48935f54b456ff1503d78d6b17d9d146b54e8ade/rotary_encoder_ec11_ec12.js",
     "upstreamSha256": "2e4ecbd9db3f15a7dee45ed6bdc337bb3d1fad4aff8b038b1107daa772312559",
     "reason": "Allow part-specific round or oval signal drills while retaining default geometry, pad centers and nets. Quote model filenames so paths containing spaces remain valid KiCad tokens."
+  },
+  {
+    "path": "diode_tht_sod123.js",
+    "upstreamUrl": "https://raw.githubusercontent.com/ceoloide/ergogen-footprints/48935f54b456ff1503d78d6b17d9d146b54e8ade/diode_tht_sod123.js",
+    "upstreamSha256": "f57b20d50876d2235682f820d818d5c599bec4f4b7adf559f20631e1018dfa46",
+    "reason": "Quote model filenames so paths containing spaces remain valid KiCad tokens."
+  },
+  {
+    "path": "power_switch_smd_side.js",
+    "upstreamUrl": "https://raw.githubusercontent.com/ceoloide/ergogen-footprints/48935f54b456ff1503d78d6b17d9d146b54e8ade/power_switch_smd_side.js",
+    "upstreamSha256": "4271a1e95ff82bfa490dcee4050927c81e0c5a517d1c24150bb07efde84f81fb",
+    "reason": "Quote model filenames so paths containing spaces remain valid KiCad tokens."
+  },
+  {
+    "path": "switch_gateron_ks27_ks33.js",
+    "upstreamUrl": "https://raw.githubusercontent.com/ceoloide/ergogen-footprints/48935f54b456ff1503d78d6b17d9d146b54e8ade/switch_gateron_ks27_ks33.js",
+    "upstreamSha256": "7292062fd420cd727d52b13fe0c1a8a5279fc046fb4bedbc926d54d0637e9d3e",
+    "reason": "Quote model filenames so paths containing spaces remain valid KiCad tokens."
   }
 ]

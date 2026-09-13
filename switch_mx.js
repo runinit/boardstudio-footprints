@@ -313,7 +313,7 @@ module.exports = {
     const hotswap_rotation = p.hotswap_3dmodel_xyz_rotation || model_rotation;
     const hotswap_offset = p.hotswap_3dmodel_xyz_offset || [0, 0, -p.pcb_thickness - socket_z_datum];
     const switch_3dmodel = `
-    (model ${p.switch_3dmodel_filename}
+    (model ${JSON.stringify(p.switch_3dmodel_filename)}
       (offset (xyz ${switch_offset[0]} ${switch_offset[1]} ${switch_offset[2]}))
       (scale (xyz ${p.switch_3dmodel_xyz_scale[0]} ${p.switch_3dmodel_xyz_scale[1]} ${p.switch_3dmodel_xyz_scale[2]}))
       (rotate (xyz ${switch_rotation[0]} ${switch_rotation[1]} ${switch_rotation[2]}))
@@ -321,7 +321,7 @@ module.exports = {
     `
 
     const hotswap_3dmodel = `
-    (model ${p.hotswap_3dmodel_filename}
+    (model ${JSON.stringify(p.hotswap_3dmodel_filename)}
       (offset (xyz ${hotswap_offset[0]} ${hotswap_offset[1]} ${hotswap_offset[2]}))
       (scale (xyz ${p.hotswap_3dmodel_xyz_scale[0]} ${p.hotswap_3dmodel_xyz_scale[1]} ${p.hotswap_3dmodel_xyz_scale[2]}))
       (rotate (xyz ${hotswap_rotation[0]} ${hotswap_rotation[1]} ${hotswap_rotation[2]}))
@@ -329,7 +329,7 @@ module.exports = {
 	  `
 
     const keycap_3dmodel = `
-    (model ${p.keycap_3dmodel_filename}
+    (model ${JSON.stringify(p.keycap_3dmodel_filename)}
       (offset (xyz ${p.keycap_3dmodel_xyz_offset[0]} ${p.keycap_3dmodel_xyz_offset[1]} ${p.keycap_3dmodel_xyz_offset[2]}))
       (scale (xyz ${p.keycap_3dmodel_xyz_scale[0]} ${p.keycap_3dmodel_xyz_scale[1]} ${p.keycap_3dmodel_xyz_scale[2]}))
       (rotate (xyz ${p.keycap_3dmodel_xyz_rotation[0]} ${p.keycap_3dmodel_xyz_rotation[1]} ${p.keycap_3dmodel_xyz_rotation[2]}))

@@ -312,7 +312,7 @@ module.exports = {
     const model_offset = p.battery_connector_3dmodel_xyz_offset || [p.side === 'B' ? 1 : -1, 0, 0];
     const model_rotation = p.battery_connector_3dmodel_xyz_rotation || [0, 0, p.side === 'B' ? 180 : 0];
     const battery_connector_3dmodel = `
-    (model ${p.battery_connector_3dmodel_filename}
+    (model ${JSON.stringify(p.battery_connector_3dmodel_filename)}
       (offset (xyz ${model_offset[0]} ${model_offset[1]} ${model_offset[2]}))
       (scale (xyz ${p.battery_connector_3dmodel_xyz_scale[0]} ${p.battery_connector_3dmodel_xyz_scale[1]} ${p.battery_connector_3dmodel_xyz_scale[2]}))
       (rotate (xyz ${model_rotation[0]} ${model_rotation[1]} ${model_rotation[2]}))

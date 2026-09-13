@@ -306,7 +306,7 @@ module.exports = {
     const socket_offset = p.pin_socket_3dmodel_xyz_offset || (back ? [5.08, 16.7, 0] : [-5.08, -16.7, 0]);
     const socket_rotation = p.pin_socket_3dmodel_xyz_rotation || [0, 0, back ? 90 : -90];
     const niceview_3dmodel = `
-    (model ${p.niceview_3dmodel_filename}
+    (model ${JSON.stringify(p.niceview_3dmodel_filename)}
       (offset (xyz ${display_offset[0]} ${display_offset[1]} ${display_offset[2]}))
       (scale (xyz ${p.niceview_3dmodel_xyz_scale[0]} ${p.niceview_3dmodel_xyz_scale[1]} ${p.niceview_3dmodel_xyz_scale[2]}))
       (rotate (xyz ${display_rotation[0]} ${display_rotation[1]} ${display_rotation[2]}))
@@ -314,7 +314,7 @@ module.exports = {
     `
 
     const pin_socket_3dmodel = `
-    (model ${p.pin_socket_3dmodel_filename}
+    (model ${JSON.stringify(p.pin_socket_3dmodel_filename)}
       (offset (xyz ${socket_offset[0]} ${socket_offset[1]} ${socket_offset[2]}))
       (scale (xyz ${p.pin_socket_3dmodel_xyz_scale[0]} ${p.pin_socket_3dmodel_xyz_scale[1]} ${p.pin_socket_3dmodel_xyz_scale[2]}))
       (rotate (xyz ${socket_rotation[0]} ${socket_rotation[1]} ${socket_rotation[2]}))
@@ -322,7 +322,7 @@ module.exports = {
     `
 
     const pin_header_3dmodel = `
-    (model ${p.pin_header_3dmodel_filename}
+    (model ${JSON.stringify(p.pin_header_3dmodel_filename)}
       (offset (xyz ${header_offset[0]} ${header_offset[1]} ${header_offset[2]}))
       (scale (xyz ${p.pin_header_3dmodel_xyz_scale[0]} ${p.pin_header_3dmodel_xyz_scale[1]} ${p.pin_header_3dmodel_xyz_scale[2]}))
       (rotate (xyz ${header_rotation[0]} ${header_rotation[1]} ${header_rotation[2]}))

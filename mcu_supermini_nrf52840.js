@@ -592,7 +592,7 @@ module.exports = {
       p.side === 'B' ? -90 : 90,
     ];
     const mcu_3dmodel = `
-    (model ${p.mcu_3dmodel_filename}
+    (model ${JSON.stringify(p.mcu_3dmodel_filename)}
       (offset (xyz ${model_offset[0]} ${model_offset[1]} ${model_offset[2]}))
       (scale (xyz ${p.mcu_3dmodel_xyz_scale[0]} ${p.mcu_3dmodel_xyz_scale[1]} ${p.mcu_3dmodel_xyz_scale[2]}))
       (rotate (xyz ${model_rotation[0]} ${model_rotation[1]} ${model_rotation[2]}))

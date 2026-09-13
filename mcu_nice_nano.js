@@ -573,7 +573,7 @@ module.exports = {
     const model_offset = p.mcu_3dmodel_xyz_offset || [0, p.side === 'B' ? model_row_offset : -model_row_offset, socket_height + (p.reverse_mount ? 0 : module_thickness)];
     const model_rotation = p.mcu_3dmodel_xyz_rotation || [0, p.reverse_mount ? 0 : 180, p.side === 'B' ? 180 : 0];
     const mcu_3dmodel = `
-    (model ${p.mcu_3dmodel_filename}
+    (model ${JSON.stringify(p.mcu_3dmodel_filename)}
       (offset (xyz ${model_offset[0]} ${model_offset[1]} ${model_offset[2]}))
       (scale (xyz ${p.mcu_3dmodel_xyz_scale[0]} ${p.mcu_3dmodel_xyz_scale[1]} ${p.mcu_3dmodel_xyz_scale[2]}))
       (rotate (xyz ${model_rotation[0]} ${model_rotation[1]} ${model_rotation[2]}))
