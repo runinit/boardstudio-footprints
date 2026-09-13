@@ -248,3 +248,16 @@ The Infused-kim nice!nano assembly passes ten cases: F/B model sides at
 0/37/90/180/270 degrees. All 24 header/socket holes and tails align, socket
 housings avoid the module, and socket traces reach their expected signal
 jumpers. Modified heights, tilt and board thickness are outside this check.
+
+### Selected package targets
+
+Use Alps EC11E15244G1 for the encoder default: vertical, 20 mm flat shaft,
+push switch, 30 detents and 15 pulses. Its manufacturer drawing is the
+alignment reference: https://tech.alpsalpine.com/e/products/detail/EC11E15244G1/.
+The generic EC11/EC12 footprint and candidate models are not yet verified
+against this exact part; selecting it does not establish compatibility.
+
+Use Gateron KS-33H10B050NN-Y24 (Low Profile 2.0 Red) as the switch package
+target. Reference: https://gateron.com/u_file/2311/10/file/GATERONKS-33LowProfile20RedSwitchBlackBottomHousing-KS-33H10B050NN-Y24.pdf.
+The bundled GDEK KS33 model has passed footprint contact checks, but its
+dimensions still need comparison with this exact manufacturer's part.
