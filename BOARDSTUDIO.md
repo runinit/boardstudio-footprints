@@ -265,3 +265,14 @@ within the drawing's tolerances. Run `python scripts/gateronDimensions.py`
 with system FreeCAD installed. This checks principal package dimensions;
 it does not verify every molded feature, material or switch travel.
 Reference: https://gateron.com/u_file/2311/10/file/GATERONKS-33LowProfileRed20SwitchWhiteBottomHousingKS-33H10B050NN-Y31.pdf.
+
+### User-provided model takeaway
+
+The user will provide the remaining reset and encoder model files:
+
+- C&K PTS636SL43LFS, 4.3 mm THT reset switch.
+- Alps EC11E15244G1 encoder.
+
+Further sourcing and drawing-based model creation are paused. Existing candidates
+remain unassigned. After the files arrive, verify model placement, mounting holes,
+pad/net alignment and native KiCad export before assigning defaults.
