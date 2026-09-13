@@ -513,6 +513,61 @@
       "routing": "Jumper pad net order is checked; Infused-Kim requires manual routing between its pads.",
       "command": "QA_KEEP_MODELS=1 node scripts/qa/model-contacts.cjs nice_view_infused (from ergogen-gui)",
       "limits": "Bundled display/header/socket assembly at default dimensions; arbitrary rotations and modified board thickness remain unverified."
+    },
+    "infused-kim/choc": {
+      "cases": 10,
+      "rotations": [
+        0,
+        90
+      ],
+      "mounting": {
+        "solder": {
+          "cases": 4,
+          "reverse": true,
+          "switch_3dmodel_side": [
+            "F",
+            "B"
+          ]
+        },
+        "hotswap": {
+          "cases": 6,
+          "single": "F switch side only",
+          "reversible": [
+            "F",
+            "B"
+          ]
+        }
+      },
+      "checks": [
+        "Solder pins fit their drills and retain distinct input/output nets; socket model omitted",
+        "Hotswap pins fit drilled holes and each physically contacts a distinct socket terminal",
+        "Each socket terminal meets one exported copper pad within a 0.1 mm solder gap",
+        "Contacted pads retain the input/output net pair"
+      ],
+      "command": "node scripts/qa/model-contacts.cjs choc_solder_infused; node scripts/qa/model-contacts.cjs choc_hotswap_infused (from ergogen-gui)",
+      "limits": "Choc V1 default switch/socket/cap geometry, default thickness and 0/90 degree rotation only."
+    },
+    "infused-kim/nice_nano_pretty": {
+      "cases": 10,
+      "mcu_3dmodel_side": [
+        "F",
+        "B"
+      ],
+      "rotations": [
+        0,
+        37,
+        90,
+        180,
+        270
+      ],
+      "checks": [
+        "All 24 module and header hole centers match PCB socket holes",
+        "Two twelve-pin sockets avoid the module PCB",
+        "All 24 socket tails fit their actual exported PCB drills",
+        "Every socket trace reaches the selected jumper and expected MCU signal pad"
+      ],
+      "command": "QA_KEEP_MODELS=1 node scripts/qa/model-contacts.cjs nano_infused (from ergogen-gui)",
+      "limits": "Default reversible footprint with bundled module/header/socket assembly; modified spacing, heights, tilt and thickness remain unverified."
     }
   },
   "remaining": [

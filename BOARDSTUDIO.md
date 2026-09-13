@@ -238,3 +238,13 @@ Nice!view checks cover 16 ceoloide and 24 Infused-Kim cases. Display/header
 rows align, socket tails fit the PCB drills, and MOSI/SCK/VCC/GND/CS order
 matches the jumper arrangement. Ceoloide trace connectivity is checked;
 Infused-Kim provides pads requiring manual routing.
+
+Infused-kim Choc checks cover four reversible solder cases and six hotswap
+cases at 0/90 degrees. Solder pins fit their drills. Each hotswap pin contacts
+a distinct socket terminal; those terminals meet the input/output copper
+pads. Single-sided hotswap uses the supported F switch side.
+
+The Infused-kim nice!nano assembly passes ten cases: F/B model sides at
+0/37/90/180/270 degrees. All 24 header/socket holes and tails align, socket
+housings avoid the module, and socket traces reach their expected signal
+jumpers. Modified heights, tilt and board thickness are outside this check.
