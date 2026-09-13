@@ -100,6 +100,6 @@
     "path": "rotary_encoder_ec11_ec12.js",
     "upstreamUrl": "https://raw.githubusercontent.com/ceoloide/ergogen-footprints/48935f54b456ff1503d78d6b17d9d146b54e8ade/rotary_encoder_ec11_ec12.js",
     "upstreamSha256": "2e4ecbd9db3f15a7dee45ed6bdc337bb3d1fad4aff8b038b1107daa772312559",
-    "reason": "Allow part-specific round or oval signal drills while retaining default geometry, pad centers and nets."
+    "reason": "Allow part-specific round or oval signal drills while retaining default geometry, pad centers and nets. Quote model filenames so paths containing spaces remain valid KiCad tokens."
   }
 ]

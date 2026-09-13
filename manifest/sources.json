@@ -62,7 +62,7 @@
       "power_switch_smd_side.js": "4271a1e95ff82bfa490dcee4050927c81e0c5a517d1c24150bb07efde84f81fb",
       "reset_switch_smd_side.js": "36c9cd86ccd4360d642a9937ed4334c61cbeaabc05f6714fc832942659118942",
       "reset_switch_tht_top.js": "ef42fd8dc6a45b805d05383f73ecc15b0910548e11f4e1661bdf715358f72f68",
-      "rotary_encoder_ec11_ec12.js": "316e6d6ec905e1631ab027337ad61877e8933111bc698141569a55bad6d0cc2e",
+      "rotary_encoder_ec11_ec12.js": "0eb207a6a0ca45e54267a34d6c36d84dbd36e0229ea159eb6522756f4d743524",
       "switch_choc_v1_v2.js": "21ae19b7fb58f3b8da34727e22f54d74834c0346e8cf07c78a6492337e339b71",
       "switch_gateron_ks27_ks33.js": "a0deb93e5328b8af592979b762fb2f4099c11e7a4bf4937aeb1615735ee7c35c",
       "switch_mx.js": "c13255b22fffbfc50a0e8eb4039816a2b9afdcc17694d8857f1e8032bb5efa83",

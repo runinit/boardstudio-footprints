@@ -25,3 +25,11 @@ for (const side of ['F', 'B']) {
     assert.throws(() => footprint.body({ ...params, signal_hole_width: 0 }), /signal hole/);
   }
 }
+
+// Imported assets can have spaces; KiCad requires one quoted filename token.
+const filename = '/tmp/encoder models/EC11E-05SW.STEP';
+const output = footprint.body({
+  ...footprint.params, at: '(at 0 0)', r: 0, ref: 'RE1', ref_hide: '',
+  encoder_3dmodel_filename: filename,
+});
+assert.ok(output.includes(`(model ${JSON.stringify(filename)}`));
